@@ -82,6 +82,16 @@ async function fetchReleases(repo) {
       html_url: r.html_url,
       body: r.body ?? '',
       bodyHtml: await renderMarkdown(r.body, repo.full_name),
+      // Uploaded build artifacts — what the Download button points at.
+      assets: (r.assets ?? [])
+        .filter((a) => a.state === 'uploaded')
+        .map((a) => ({
+          name: a.name,
+          url: a.browser_download_url,
+          size: a.size,
+          contentType: a.content_type,
+          downloads: a.download_count ?? 0,
+        })),
     });
   }
 

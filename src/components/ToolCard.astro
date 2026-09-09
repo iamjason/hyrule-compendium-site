@@ -28,10 +28,23 @@ const haystack = [
   data-search={haystack}
 >
   <div class="card-top">
-    <div>
+    {tool.icon && (
+      <img
+        class="tool-icon"
+        src={tool.icon}
+        alt=""
+        width="40"
+        height="40"
+        loading="lazy"
+        decoding="async"
+      />
+    )}
+
+    <div class="ident">
       <h3><a href={href(`tools/${tool.command}/`)}>{tool.name}</a></h3>
       <span class="cmd">{tool.command}</span>
     </div>
+
     <StatusBadge status={tool.status} />
   </div>
 
@@ -62,6 +75,18 @@ const haystack = [
 </article>
 
 <style>
+  /* Icon, then the name/command stack; the badge is pushed to the far edge. */
+  .card-top { align-items: center; }
+  .ident { min-width: 0; margin-right: auto; }
+  .tool-icon {
+    width: 40px; height: 40px; flex: none;
+    border-radius: 9px;
+    background: var(--bg);
+    /* An app icon already carries its own edge; this only defines it against
+       a same-tone card. */
+    box-shadow: 0 0 0 1px var(--border);
+  }
+
   .sr-only {
     position: absolute; width: 1px; height: 1px;
     padding: 0; margin: -1px; overflow: hidden;

@@ -25,6 +25,11 @@ repo tagged `hyrule-tool`
 The site builds **only** from the committed `data/tools.json`. No API calls
 happen at build time, so a GitHub API outage cannot break a deploy.
 
+**Downloads.** Each tool's detail page shows a Download button for the latest
+release's build artifact, picked from that release's uploaded assets —
+checksums, signatures and GitHub's auto-generated source archives are skipped.
+A release with no attached assets simply shows no button.
+
 ---
 
 ## Adding a new tool
@@ -62,6 +67,8 @@ overrides whatever the GitHub API says.
   "command": "korok",
   "tagline": "Keeps every repo in a GitLab group cloned and synced from your menu bar.",
   "status": "beta",
+  "language": "Swift",
+  "icon": "https://iamjason.github.io/korok-site/assets/favicon.png",
   "platforms": ["macos"],
   "docs": "https://iamjason.github.io/korok-site/"
 }
@@ -80,6 +87,8 @@ overrides whatever the GitHub API says.
 
 | Field | Type | Notes |
 |---|---|---|
+| `language` | string | What the tool is written in. Overrides the API's detected language, which reports the language of the repo being *read* — wrong when a tool's public repo is its download site. |
+| `icon` | string | Absolute `https://` URL to a square icon, shown on the card and detail page. Point it at the app icon your tool's own site uses. |
 | `install` | string | One copy-pasteable command. Rendered with a copy button. Omit it and the install block is hidden — right for apps distributed as downloads rather than a package manager. |
 | `platforms` | array | Any of `macos`, `linux`, `windows`. |
 | `docs` | string | Absolute `https://` URL to the tool's public site. Shown as **Website** in the sidebar. |

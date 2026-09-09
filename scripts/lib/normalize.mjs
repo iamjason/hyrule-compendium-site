@@ -47,6 +47,7 @@ export function normalizeTool({ repo, manifest, releases, readmeHtml, warnings }
     status,
 
     // install
+    icon: m.icon ?? null,
     install: m.install ?? null,
     platforms: Array.isArray(m.platforms) ? m.platforms : [],
     docs: m.docs ?? null,

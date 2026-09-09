@@ -4,7 +4,7 @@ import type { Tool, Release, Platform } from '../../../types';
 import Base from '../../../layouts/Base.astro';
 import StatusBadge from '../../../components/StatusBadge.astro';
 import CopyButton from '../../../components/CopyButton.astro';
-import { tools, isRecent } from '../../../lib/tools';
+import { tools, isRecent, primaryAsset, formatBytes } from '../../../lib/tools';
 import { href, formatDate } from '../../../lib/paths';
 
 export const getStaticPaths: GetStaticPaths = () => {
@@ -20,6 +20,9 @@ export const getStaticPaths: GetStaticPaths = () => {
 interface Props { tool: Tool; }
 const { tool } = Astro.props;
 const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linux: 'Linux', windows: 'Windows' };
+
+const download = primaryAsset(tool.latestRelease);
+const platformText = tool.platforms.map((p) => platformLabels[p] ?? p).join(', ');
 ---
 
 <Base title={tool.name} description={tool.tagline} nav="tools">
@@ -28,6 +31,9 @@ const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linu
       <a class="crumb" href={href()}>← All tools</a>
 
       <div class="tool-title">
+        {tool.icon && (
+          <img class="tool-icon-lg" src={tool.icon} alt="" width="56" height="56" decoding="async" />
+        )}
         <h1>{tool.name}</h1>
         <span class="cmd">{tool.command}</span>
         <StatusBadge status={tool.status} />
@@ -85,6 +91,25 @@ const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linu
       </div>
 
       <aside>
+        {download && (
+          <div class="panel">
+            <h2>Download</h2>
+            <a class="download-btn" href={download.url} download>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3.5v11.5m0 0 4.2-4.2M12 15l-4.2-4.2" stroke="currentColor"
+                      stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.5 17.5v1a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-1" stroke="currentColor"
+                      stroke-width="1.9" stroke-linecap="round"/>
+              </svg>
+              Download {tool.latestRelease?.tag}
+            </a>
+            <p class="download-meta">
+              {[platformText, formatBytes(download.size)].filter(Boolean).join(' · ')}
+            </p>
+            <a class="download-alt" href={tool.latestRelease?.html_url}>All release downloads</a>
+          </div>
+        )}
+
         {tool.install && (
           <div class="panel">
             <h2>Install</h2>
@@ -147,6 +172,34 @@ const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linu
 </Base>
 
 <style>
+  .tool-icon-lg {
+    width: 56px; height: 56px; flex: none;
+    border-radius: 13px; background: var(--bg);
+    box-shadow: 0 0 0 1px var(--border);
+  }
+
+  /* The one filled button on the site — this is the primary action for a tool
+     that ships as a download. Static fill, no glow: it carries a version
+     number people need to read. */
+  .download-btn {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 11px 16px; width: 100%;
+    font-family: var(--font-ui); font-size: 0.92rem; font-weight: 600;
+    color: var(--accent-ink); background: var(--accent);
+    border-radius: var(--r-md); text-decoration: none;
+  }
+  .download-btn:hover { background: var(--accent-hover); color: var(--accent-ink); }
+  .download-btn svg { width: 17px; height: 17px; }
+  .download-meta {
+    margin: 9px 0 0; text-align: center;
+    font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint);
+  }
+  .download-alt {
+    display: block; margin-top: 10px; text-align: center;
+    font-size: 0.8rem; color: var(--text-muted);
+  }
+  .download-alt:hover { color: var(--accent); }
+
   .release-history { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
   .release-history > h2 {
     font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;

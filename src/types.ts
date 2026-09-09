@@ -5,6 +5,14 @@ export const STATUSES = ['stable', 'beta', 'experimental', 'archived'] as const;
 export type Status = (typeof STATUSES)[number];
 export type Platform = 'macos' | 'linux' | 'windows';
 
+export interface ReleaseAsset {
+  name: string;
+  url: string;
+  size: number;
+  contentType: string;
+  downloads: number;
+}
+
 export interface Release {
   tag: string;
   name: string;
@@ -13,6 +21,7 @@ export interface Release {
   html_url: string;
   body: string;
   bodyHtml: string;
+  assets: ReleaseAsset[];
 }
 
 export interface RepoMeta {
@@ -31,6 +40,7 @@ export interface Tool {
   name: string;
   tagline: string;
   status: Status;
+  icon: string | null;
   install: string | null;
   platforms: Platform[];
   docs: string | null;

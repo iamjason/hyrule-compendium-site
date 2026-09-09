@@ -51,6 +51,12 @@
       "minLength": 1,
       "maxLength": 30
     },
+    "icon": {
+      "type": "string",
+      "description": "Absolute https URL to a square icon for the tool, shown on its card and detail page. Use the app icon the tool's own site uses. 128px or larger renders best; anything square works.",
+      "format": "uri",
+      "pattern": "^https://"
+    },
     "install": {
       "type": "string",
       "description": "A single copy-pasteable install command. Rendered with a copy button.",

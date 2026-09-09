@@ -5,8 +5,18 @@
     {
       "command": "deku",
       "docs": "https://iamjason.github.io/deku-site/",
+      "icon": "https://iamjason.github.io/deku-site/assets/favicon.png",
       "install": null,
       "latestRelease": {
+        "assets": [
+          {
+            "contentType": "application/zip",
+            "downloads": 2,
+            "name": "Deku-0.2.12.zip",
+            "size": 12066299,
+            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.12/Deku-0.2.12.zip"
+          }
+        ],
         "body": "Deku 0.2.12 — signed and notarized for macOS.",
         "bodyHtml": "<p dir=\"auto\">Deku 0.2.12 — signed and notarized for macOS.</p>",
         "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.12",
@@ -23,6 +33,15 @@
       "readmeHtml": "<p dir=\"auto\">Public website and release downloads for <strong>Deku</strong>, a native macOS Git client.\nSite: <a href=\"https://iamjason.github.io/deku-site/\" rel=\"nofollow\">https://iamjason.github.io/deku-site/</a></p>\n<p dir=\"auto\">App source is private; signed and notarized builds are published under\n<a href=\"https://github.com/iamjason/deku-site/releases\">Releases</a>. The download button\nalways points at the latest release. <code>tools/release.sh</code> in the app repo builds,\nnotarizes, uploads the zip here, and bumps the version label on this page.</p>",
       "releases": [
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.12.zip",
+              "size": 12066299,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.12/Deku-0.2.12.zip"
+            }
+          ],
           "body": "Deku 0.2.12 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.12 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.12",
@@ -32,6 +51,15 @@
           "tag": "v0.2.12"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 0,
+              "name": "Deku-0.2.11.zip",
+              "size": 12066296,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.11/Deku-0.2.11.zip"
+            }
+          ],
           "body": "Deku 0.2.11 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.11 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.11",
@@ -41,6 +69,15 @@
           "tag": "v0.2.11"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.10.zip",
+              "size": 12062770,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.10/Deku-0.2.10.zip"
+            }
+          ],
           "body": "Deku 0.2.10 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.10 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.10",
@@ -50,6 +87,15 @@
           "tag": "v0.2.10"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.9.zip",
+              "size": 12062773,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.9/Deku-0.2.9.zip"
+            }
+          ],
           "body": "Deku 0.2.9 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.9 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.9",
@@ -59,6 +105,15 @@
           "tag": "v0.2.9"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.8.zip",
+              "size": 12029697,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.8/Deku-0.2.8.zip"
+            }
+          ],
           "body": "Deku 0.2.8 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.8 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.8",
@@ -68,6 +123,15 @@
           "tag": "v0.2.8"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.7.zip",
+              "size": 11823775,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.7/Deku-0.2.7.zip"
+            }
+          ],
           "body": "Deku 0.2.7 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.7 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.7",
@@ -77,6 +141,15 @@
           "tag": "v0.2.7"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 4,
+              "name": "Deku-0.2.6.zip",
+              "size": 11822624,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.6/Deku-0.2.6.zip"
+            }
+          ],
           "body": "Deku 0.2.6 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.6 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.6",
@@ -86,6 +159,15 @@
           "tag": "v0.2.6"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.5.zip",
+              "size": 10323129,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.5/Deku-0.2.5.zip"
+            }
+          ],
           "body": "Deku 0.2.5 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.5 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.5",
@@ -95,6 +177,15 @@
           "tag": "v0.2.5"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.4.zip",
+              "size": 10323131,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.4/Deku-0.2.4.zip"
+            }
+          ],
           "body": "Deku 0.2.4 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.4 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.4",
@@ -104,6 +195,15 @@
           "tag": "v0.2.4"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.3.zip",
+              "size": 7332658,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.3/Deku-0.2.3.zip"
+            }
+          ],
           "body": "Deku 0.2.3 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.3 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.3",
@@ -113,6 +213,15 @@
           "tag": "v0.2.3"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.2.zip",
+              "size": 7186940,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.2/Deku-0.2.2.zip"
+            }
+          ],
           "body": "Deku 0.2.2 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.2 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.2",
@@ -122,6 +231,15 @@
           "tag": "v0.2.2"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.1.zip",
+              "size": 7079514,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.1/Deku-0.2.1.zip"
+            }
+          ],
           "body": "Deku 0.2.1 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.1 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.1",
@@ -131,6 +249,15 @@
           "tag": "v0.2.1"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.0.zip",
+              "size": 7037714,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.0/Deku-0.2.0.zip"
+            }
+          ],
           "body": "Deku 0.2.0 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Deku 0.2.0 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.0",
@@ -160,8 +287,18 @@
     {
       "command": "korok",
       "docs": "https://iamjason.github.io/korok-site/",
+      "icon": "https://iamjason.github.io/korok-site/assets/favicon.png",
       "install": null,
       "latestRelease": {
+        "assets": [
+          {
+            "contentType": "application/zip",
+            "downloads": 2,
+            "name": "Korok-0.3.3.zip",
+            "size": 26853007,
+            "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.3/Korok-0.3.3.zip"
+          }
+        ],
         "body": "Korok 0.3.3 — signed and notarized for macOS.",
         "bodyHtml": "<p dir=\"auto\">Korok 0.3.3 — signed and notarized for macOS.</p>",
         "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.3.3",
@@ -178,6 +315,15 @@
       "readmeHtml": "<p dir=\"auto\">Public website and release downloads for <strong>Korok</strong>, a macOS menu-bar app\nthat keeps a GitLab group's repos synced locally. Site:\n<a href=\"https://iamjason.github.io/korok-site/\" rel=\"nofollow\">https://iamjason.github.io/korok-site/</a></p>\n<p dir=\"auto\">App source is private; builds are published under\n<a href=\"https://github.com/iamjason/korok-site/releases\">Releases</a>.</p>",
       "releases": [
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Korok-0.3.3.zip",
+              "size": 26853007,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.3/Korok-0.3.3.zip"
+            }
+          ],
           "body": "Korok 0.3.3 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Korok 0.3.3 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.3.3",
@@ -187,6 +333,15 @@
           "tag": "v0.3.3"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 7,
+              "name": "Korok-0.3.2.zip",
+              "size": 22824868,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.2/Korok-0.3.2.zip"
+            }
+          ],
           "body": "Korok 0.3.2 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Korok 0.3.2 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.3.2",
@@ -196,6 +351,15 @@
           "tag": "v0.3.2"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Korok-0.3.1.zip",
+              "size": 22818796,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.1/Korok-0.3.1.zip"
+            }
+          ],
           "body": "Korok 0.3.1 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Korok 0.3.1 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.3.1",
@@ -205,6 +369,15 @@
           "tag": "v0.3.1"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 4,
+              "name": "Korok-0.3.0.zip",
+              "size": 17516855,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.0/Korok-0.3.0.zip"
+            }
+          ],
           "body": "## What's new in 0.3.0\n\n- **One account connection is all Korok needs.** Cloning used to go over SSH, so Apply failed with `Permission denied (publickey)` unless you also had an SSH key registered with GitLab. Korok now clones and pulls over HTTPS using the token you connect in Settings — no SSH key, no `glab auth login`.\n- **Existing clones are migrated automatically.** Repos already cloned over SSH get their `origin` retargeted on the next Apply (untouched if you've pointed it somewhere of your own).\n- **Scope problems are caught at connect time.** A token that can list repos but not clone them is now rejected when you paste it, with a message saying what's missing, instead of failing later mid-Apply.\n\n**Upgrading:** this needs a token with both `read_api` and `write_repository`. If yours is `read_api`-only, Sign Out in Settings and reconnect — the \"Create a token…\" link pre-selects both scopes.\n\nSigned and notarized for macOS.",
           "bodyHtml": "<h2 dir=\"auto\">What's new in 0.3.0</h2>\n<ul dir=\"auto\">\n<li><strong>One account connection is all Korok needs.</strong> Cloning used to go over SSH, so Apply failed with <code class=\"notranslate\">Permission denied (publickey)</code> unless you also had an SSH key registered with GitLab. Korok now clones and pulls over HTTPS using the token you connect in Settings — no SSH key, no <code class=\"notranslate\">glab auth login</code>.</li>\n<li><strong>Existing clones are migrated automatically.</strong> Repos already cloned over SSH get their <code class=\"notranslate\">origin</code> retargeted on the next Apply (untouched if you've pointed it somewhere of your own).</li>\n<li><strong>Scope problems are caught at connect time.</strong> A token that can list repos but not clone them is now rejected when you paste it, with a message saying what's missing, instead of failing later mid-Apply.</li>\n</ul>\n<p dir=\"auto\"><strong>Upgrading:</strong> this needs a token with both <code class=\"notranslate\">read_api</code> and <code class=\"notranslate\">write_repository</code>. If yours is <code class=\"notranslate\">read_api</code>-only, Sign Out in Settings and reconnect — the \"Create a token…\" link pre-selects both scopes.</p>\n<p dir=\"auto\">Signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.3.0",
@@ -214,6 +387,15 @@
           "tag": "v0.3.0"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 3,
+              "name": "Korok-0.2.3.zip",
+              "size": 17511922,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.2.3/Korok-0.2.3.zip"
+            }
+          ],
           "body": "## What's new in 0.2.3\n\n- **Automatic updates** — Korok checks for new releases once a day and offers to install them in place (Install & Relaunch). Downloads are verified against Jason's Developer ID signature before installing.\n- **Check for Updates…** — run a check any time from the ⋯ menu.\n\nSigned and notarized for macOS.",
           "bodyHtml": "<h2 dir=\"auto\">What's new in 0.2.3</h2>\n<ul dir=\"auto\">\n<li><strong>Automatic updates</strong> — Korok checks for new releases once a day and offers to install them in place (Install &amp; Relaunch). Downloads are verified against Jason's Developer ID signature before installing.</li>\n<li><strong>Check for Updates…</strong> — run a check any time from the ⋯ menu.</li>\n</ul>\n<p dir=\"auto\">Signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.2.3",
@@ -223,6 +405,15 @@
           "tag": "v0.2.3"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Korok-0.2.2.zip",
+              "size": 17511926,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.2.2/Korok-0.2.2.zip"
+            }
+          ],
           "body": "## What's new in 0.2.2\n\n- **Automatic updates** — Korok now checks for new releases once a day and offers to install them in place (Install & Relaunch). Downloads are verified against Jason's Developer ID signature before installing.\n- **Check for Updates…** — run a check any time from the ⋯ menu.\n\nSigned and notarized for macOS.",
           "bodyHtml": "<h2 dir=\"auto\">What's new in 0.2.2</h2>\n<ul dir=\"auto\">\n<li><strong>Automatic updates</strong> — Korok now checks for new releases once a day and offers to install them in place (Install &amp; Relaunch). Downloads are verified against Jason's Developer ID signature before installing.</li>\n<li><strong>Check for Updates…</strong> — run a check any time from the ⋯ menu.</li>\n</ul>\n<p dir=\"auto\">Signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.2.2",
@@ -232,6 +423,15 @@
           "tag": "v0.2.2"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 0,
+              "name": "Korok-0.2.1.zip",
+              "size": 17478713,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.2.1/Korok-0.2.1.zip"
+            }
+          ],
           "body": "Korok 0.2.1 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Korok 0.2.1 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.2.1",
@@ -241,6 +441,15 @@
           "tag": "v0.2.1"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Korok-0.2.0.zip",
+              "size": 17477760,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.2.0/Korok-0.2.0.zip"
+            }
+          ],
           "body": "Korok 0.2.0 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Korok 0.2.0 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.2.0",
@@ -250,6 +459,15 @@
           "tag": "v0.2.0"
         },
         {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Korok-0.1.2.zip",
+              "size": 17467625,
+              "url": "https://github.com/iamjason/korok-site/releases/download/v0.1.2/Korok-0.1.2.zip"
+            }
+          ],
           "body": "Korok 0.1.2 — signed and notarized for macOS.",
           "bodyHtml": "<p dir=\"auto\">Korok 0.1.2 — signed and notarized for macOS.</p>",
           "html_url": "https://github.com/iamjason/korok-site/releases/tag/v0.1.2",
