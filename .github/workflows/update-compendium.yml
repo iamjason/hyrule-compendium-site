@@ -8,10 +8,12 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [tool-released]
+  # No paths-ignore here: the refresh job's own commit uses GITHUB_TOKEN, and
+  # GitHub does not start new workflow runs from GITHUB_TOKEN pushes, so there
+  # is no loop to prevent. Ignoring data/tools.json would only stop the site
+  # rebuilding on the one file whose changes matter most.
   push:
     branches: [main]
-    paths-ignore:
-      - 'data/tools.json'
 
 permissions:
   contents: write
