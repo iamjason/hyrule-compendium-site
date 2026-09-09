@@ -1,32 +1,11 @@
 import data from '../../data/tools.json';
-import type { Category, ChangelogEntry, Compendium, Tool } from '../types';
-import { CATEGORIES } from '../types';
+import type { ChangelogEntry, Compendium, Tool } from '../types';
 
 const compendium = data as unknown as Compendium;
 
 export const tools: Tool[] = compendium.tools;
 export const owner = compendium.owner;
 export const topic = compendium.topic;
-
-/** Human-facing labels and blurbs for each shelf of the Compendium. */
-export const CATEGORY_LABELS: Record<Category, string> = {
-  build: 'Build',
-  time: 'Time',
-  search: 'Search',
-  move: 'Move',
-  guard: 'Guard',
-  environment: 'Environment',
-  knowledge: 'Knowledge',
-};
-
-/** Categories that actually have tools, in canonical order. */
-export function populatedCategories(): Category[] {
-  return CATEGORIES.filter((c) => tools.some((t) => t.category === c));
-}
-
-export function toolsIn(category: Category): Tool[] {
-  return tools.filter((t) => t.category === category);
-}
 
 export function toolByCommand(command: string): Tool | undefined {
   return tools.find((t) => t.command === command);
@@ -47,7 +26,6 @@ export function changelog(): ChangelogEntry[] {
         ...r,
         toolCommand: t.command,
         toolName: t.name,
-        toolCategory: t.category,
       })),
     )
     .sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));

@@ -1,18 +1,7 @@
 /** Shapes stored in data/tools.json. Kept in sync with scripts/lib/normalize.mjs. */
 
-export const CATEGORIES = [
-  'build',
-  'time',
-  'search',
-  'move',
-  'guard',
-  'environment',
-  'knowledge',
-] as const;
-
 export const STATUSES = ['stable', 'beta', 'experimental', 'archived'] as const;
 
-export type Category = (typeof CATEGORIES)[number];
 export type Status = (typeof STATUSES)[number];
 export type Platform = 'macos' | 'linux' | 'windows';
 
@@ -41,7 +30,6 @@ export interface Tool {
   command: string;
   name: string;
   tagline: string;
-  category: Category;
   status: Status;
   install: string | null;
   platforms: Platform[];
@@ -66,5 +54,4 @@ export interface Compendium {
 export interface ChangelogEntry extends Release {
   toolCommand: string;
   toolName: string;
-  toolCategory: Category;
 }

@@ -29,6 +29,12 @@ happen at build time, so a GitHub API outage cannot break a deploy.
 
 ## Adding a new tool
 
+> **Tag the repo people can actually reach.** Discovery runs over *public*
+> repos, and an entry's README and links are published on a public site. Where
+> a tool's source is private and its releases live in a separate public repo,
+> tag the public one — that is the repo with the downloads, the site, and the
+> release history worth showing.
+
 1. **Tag the repo with the topic `hyrule-tool`.**
    Repo → About (gear icon) → Topics → add `hyrule-tool`.
    This is the entire discovery mechanism. No list to edit here.
@@ -54,12 +60,10 @@ overrides whatever the GitHub API says.
   "$schema": "https://iamjason.github.io/hyrule-compendium-site/schema/hyrule.schema.json",
   "name": "Korok",
   "command": "korok",
-  "tagline": "Finds what is hidden in your repo.",
-  "category": "search",
-  "status": "stable",
-  "install": "brew install jason/tap/korok",
-  "platforms": ["macos", "linux"],
-  "docs": "https://iamjason.github.io/korok/"
+  "tagline": "Keeps every repo in a GitLab group cloned and synced from your menu bar.",
+  "status": "beta",
+  "platforms": ["macos"],
+  "docs": "https://iamjason.github.io/korok-site/"
 }
 ```
 
@@ -70,16 +74,15 @@ overrides whatever the GitHub API says.
 | `name` | string | Display name. Falls back to the repo name. |
 | `command` | string | The binary name. **Becomes the URL: `/tools/<command>/`.** Must be unique across the Compendium; `^[a-z0-9][a-z0-9-]*$`. |
 | `tagline` | string | One sentence, shown on the card. Max 120 chars. Falls back to the repo description. |
-| `category` | enum | `build` · `time` · `search` · `move` · `guard` · `environment` · `knowledge` |
 | `status` | enum | `stable` · `beta` · `experimental` · `archived` |
 
 ### Optional fields
 
 | Field | Type | Notes |
 |---|---|---|
-| `install` | string | One copy-pasteable command. Rendered with a copy button. Omit it and the install block is hidden. |
+| `install` | string | One copy-pasteable command. Rendered with a copy button. Omit it and the install block is hidden — right for apps distributed as downloads rather than a package manager. |
 | `platforms` | array | Any of `macos`, `linux`, `windows`. |
-| `docs` | string | Absolute `https://` URL to external docs. |
+| `docs` | string | Absolute `https://` URL to the tool's public site. Shown as **Website** in the sidebar. |
 
 Unknown keys are rejected, so a typo like `"platfroms"` fails validation
 instead of silently doing nothing.
@@ -98,8 +101,7 @@ editor autocomplete and validate it in their own CI.
 ### When a manifest is missing or broken
 
 The build **never fails** on a bad manifest. It falls back to API metadata
-(repo name, description, language) and defaults to `category: knowledge`,
-`status: experimental`. Every fallback is emitted as a `::warning::` annotation
+(repo name, description, language) and defaults to `status: experimental`. Every fallback is emitted as a `::warning::` annotation
 in the workflow run, so problems show up in the Actions summary rather than
 taking the site down.
 

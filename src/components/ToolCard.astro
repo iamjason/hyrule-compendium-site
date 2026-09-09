@@ -23,7 +23,6 @@ const haystack = [
 <article
   class="card"
   data-tool
-  data-category={tool.category}
   data-status={tool.status}
   data-language={tool.repo.language ?? ''}
   data-search={haystack}
@@ -51,12 +50,14 @@ const haystack = [
       <span class="lang"><i class="dot"></i>{tool.repo.language}</span>
     )}
 
-    <span class="stars">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/>
-      </svg>
-      <span class="sr-only">Stars:</span>{tool.repo.stars}
-    </span>
+    {tool.repo.stars > 0 && (
+      <span class="stars">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="m12 2.6 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/>
+        </svg>
+        <span class="sr-only">Stars:</span>{tool.repo.stars}
+      </span>
+    )}
   </div>
 </article>
 

@@ -270,15 +270,7 @@ main { flex: 1; padding-bottom: 72px; }
 .filters button.reset:hover { color: var(--text); border-color: var(--border-strong); }
 .filters button.reset[hidden] { display: none; }
 
-/* ─── Category sections ─────────────────────────────────────────────────── */
-
-.category { padding-top: 44px; }
-.category-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 18px; }
-.category-head h2 { font-size: 1.18rem; letter-spacing: 0.01em; }
-.category-head .rule { flex: 1; height: 1px; background: var(--border); }
-.category-head .n {
-  font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-faint);
-}
+/* ─── Tool grid ─────────────────────────────────────────────────────────── */
 
 .grid {
   display: grid; gap: 16px;
@@ -431,7 +423,6 @@ main { flex: 1; padding-bottom: 72px; }
   overflow-wrap: break-word;
 }
 .prose > *:first-child { margin-top: 0; }
-.prose > h1:first-child { display: none; }
 .prose h1 { font-size: 1.55rem; margin: 34px 0 14px; padding-bottom: 9px; border-bottom: 1px solid var(--border); }
 .prose h2 { font-size: 1.24rem; margin: 30px 0 12px; padding-bottom: 7px; border-bottom: 1px solid var(--border); }
 .prose h3 { font-size: 1.05rem; margin: 24px 0 10px; }

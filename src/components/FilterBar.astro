@@ -1,8 +1,7 @@
 ---
 import { STATUSES } from '../types';
-import { CATEGORY_LABELS, languages, populatedCategories } from '../lib/tools';
+import { languages } from '../lib/tools';
 
-const cats = populatedCategories();
 const langs = languages();
 ---
 
@@ -21,14 +20,6 @@ const langs = languages();
         autocomplete="off"
         spellcheck="false"
       />
-    </div>
-
-    <div class="select-field">
-      <label class="sr-only" for="f-category">Filter by category</label>
-      <select id="f-category">
-        <option value="">All categories</option>
-        {cats.map((c) => <option value={c}>{CATEGORY_LABELS[c]}</option>)}
-      </select>
     </div>
 
     <div class="select-field">

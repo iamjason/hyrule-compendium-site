@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 
 import { get, getAll, renderMarkdown, isAuthenticated } from './lib/github.mjs';
-import { normalizeTool, stableStringify } from './lib/normalize.mjs';
+import { cleanReadmeHtml, normalizeTool, stableStringify } from './lib/normalize.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = resolve(root, 'data/tools.json');
@@ -65,7 +65,7 @@ async function fetchReadmeHtml(repo) {
     warnings.push(`${repo.full_name}: no README found.`);
     return '';
   }
-  return html;
+  return cleanReadmeHtml(html);
 }
 
 async function fetchReleases(repo) {
@@ -125,8 +125,8 @@ async function main() {
     tools.push(normalizeTool({ repo, manifest, releases, readmeHtml, warnings }));
   }
 
-  // Deterministic ordering: category, then command.
-  tools.sort((a, b) => a.category.localeCompare(b.category) || a.command.localeCompare(b.command));
+  // Deterministic ordering.
+  tools.sort((a, b) => a.command.localeCompare(b.command));
 
   // Guard against two repos claiming the same URL slug.
   const seen = new Map();

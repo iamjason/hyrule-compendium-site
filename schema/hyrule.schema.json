@@ -4,7 +4,12 @@
   "title": "Hyrule Compendium tool manifest",
   "description": "Manifest for a tool listed in the Hyrule Compendium. Lives at the root of a tool repo as `hyrule.json`. Values here override metadata fetched from the GitHub API.",
   "type": "object",
-  "required": ["name", "command", "tagline", "category", "status"],
+  "required": [
+    "name",
+    "command",
+    "tagline",
+    "status"
+  ],
   "additionalProperties": false,
   "properties": {
     "$schema": {
@@ -30,15 +35,21 @@
       "minLength": 1,
       "maxLength": 120
     },
-    "category": {
-      "type": "string",
-      "description": "Which shelf of the Compendium this tool sits on.",
-      "enum": ["build", "time", "search", "move", "guard", "environment", "knowledge"]
-    },
     "status": {
       "type": "string",
       "description": "Maturity. Drives the status badge on the card.",
-      "enum": ["stable", "beta", "experimental", "archived"]
+      "enum": [
+        "stable",
+        "beta",
+        "experimental",
+        "archived"
+      ]
+    },
+    "language": {
+      "type": "string",
+      "description": "The language the tool is actually written in. Overrides the GitHub API's detected language, which reports the language of the repo being read \u2014 wrong when a tool's public repo hosts a download site rather than its source.",
+      "minLength": 1,
+      "maxLength": 30
     },
     "install": {
       "type": "string",
@@ -51,7 +62,11 @@
       "description": "Platforms the tool runs on.",
       "items": {
         "type": "string",
-        "enum": ["macos", "linux", "windows"]
+        "enum": [
+          "macos",
+          "linux",
+          "windows"
+        ]
       },
       "uniqueItems": true,
       "minItems": 1

@@ -6,16 +6,6 @@
  * a build failure — the entry still renders from API metadata alone.
  */
 
-export const CATEGORIES = [
-  'build',
-  'time',
-  'search',
-  'move',
-  'guard',
-  'environment',
-  'knowledge',
-];
-
 export const STATUSES = ['stable', 'beta', 'experimental', 'archived'];
 
 /** Fallback slug when there is no manifest: derive it from the repo name. */
@@ -36,16 +26,12 @@ export function normalizeTool({ repo, manifest, releases, readmeHtml, warnings }
   const m = manifest ?? {};
 
   const command = m.command ?? slugify(repo.name);
-  const category = CATEGORIES.includes(m.category) ? m.category : 'knowledge';
   const status = STATUSES.includes(m.status) ? m.status : 'experimental';
 
   if (!manifest) {
     warnings.push(`${repo.full_name}: no hyrule.json — using API metadata only.`);
   } else {
     if (!m.command) warnings.push(`${repo.full_name}: manifest has no "command"; slug derived as "${command}".`);
-    if (m.category && !CATEGORIES.includes(m.category)) {
-      warnings.push(`${repo.full_name}: unknown category "${m.category}"; filed under "knowledge".`);
-    }
     if (m.status && !STATUSES.includes(m.status)) {
       warnings.push(`${repo.full_name}: unknown status "${m.status}"; treated as "experimental".`);
     }
@@ -58,7 +44,6 @@ export function normalizeTool({ repo, manifest, releases, readmeHtml, warnings }
     command,
     name: m.name ?? repo.name,
     tagline: m.tagline ?? repo.description ?? '',
-    category,
     status,
 
     // install
@@ -73,7 +58,7 @@ export function normalizeTool({ repo, manifest, releases, readmeHtml, warnings }
       issues_url: `${repo.html_url}/issues`,
       description: repo.description ?? '',
       stars: repo.stargazers_count ?? 0,
-      language: repo.language ?? null,
+      language: m.language ?? repo.language ?? null,
       topics: repo.topics ?? [],
       archived: Boolean(repo.archived),
     },
@@ -102,4 +87,42 @@ export function stableStringify(value) {
     }
     return val;
   }, 2) + '\n';
+}
+
+/**
+ * Reduce GitHub's rendered README HTML to just the content.
+ *
+ * The html+json media type returns the full file view:
+ *   <div id="readme"><article class="markdown-body">…</article></div>
+ * with every heading wrapped in <div class="markdown-heading"> alongside a
+ * permalink anchor. We want the article's children only, so that the `.prose`
+ * child selectors in the stylesheet apply to real content.
+ *
+ * The leading <h1> is dropped: a README opens with the repo's own name, which
+ * is both a duplicate of the page header and — when a tool's public repo is
+ * its download site — the wrong name entirely ("korok-site", not "Korok").
+ */
+export function cleanReadmeHtml(html) {
+  if (!html) return '';
+
+  const article = html.match(/<article[^>]*class="[^"]*markdown-body[^"]*"[^>]*>([\s\S]*)<\/article>/);
+  let out = (article ? article[1] : html).trim();
+
+  // Drop a leading heading block if it wraps an <h1>.
+  const OPEN = '<div class="markdown-heading"';
+  if (out.startsWith(OPEN)) {
+    const end = out.indexOf('</div>');
+    if (end !== -1) {
+      const block = out.slice(0, end);
+      if (/<h1[\s>]/.test(block)) out = out.slice(end + '</div>'.length).trim();
+    }
+  } else if (/^<h1[\s>]/.test(out)) {
+    const end = out.indexOf('</h1>');
+    if (end !== -1) out = out.slice(end + '</h1>'.length).trim();
+  }
+
+  // Permalink anchors are chrome for github.com, not for here.
+  out = out.replace(/<a[^>]*class="[^"]*\banchor\b[^"]*"[^>]*>[\s\S]*?<\/a>/g, '');
+
+  return out.trim();
 }

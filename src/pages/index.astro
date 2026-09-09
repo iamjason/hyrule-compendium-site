@@ -2,10 +2,8 @@
 import Base from '../layouts/Base.astro';
 import ToolCard from '../components/ToolCard.astro';
 import FilterBar from '../components/FilterBar.astro';
-import { CATEGORY_LABELS, populatedCategories, toolsIn, tools, isRecent } from '../lib/tools';
+import { tools, isRecent } from '../lib/tools';
 
-const cats = populatedCategories();
-const stable = tools.filter((t) => t.status === 'stable').length;
 const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_at ?? null)).length;
 ---
 
@@ -20,8 +18,6 @@ const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_
       </p>
       <div class="counts">
         <span><b>{tools.length}</b> tools</span>
-        <span><b>{cats.length}</b> categories</span>
-        <span><b>{stable}</b> stable</span>
         {shippedRecently > 0 && <span><b>{shippedRecently}</b> shipped in the last 30 days</span>}
       </div>
     </div>
@@ -30,18 +26,11 @@ const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_
   <FilterBar />
 
   <div class="wrap">
-    {cats.map((category) => (
-      <section class="category" data-category-section data-hidden="false">
-        <div class="category-head">
-          <h2 id={`cat-${category}`}>{CATEGORY_LABELS[category]}</h2>
-          <span class="n" data-section-count>{toolsIn(category).length}</span>
-          <span class="rule"></span>
-        </div>
-        <div class="grid" role="list" aria-labelledby={`cat-${category}`}>
-          {toolsIn(category).map((tool) => <ToolCard tool={tool} />)}
-        </div>
-      </section>
-    ))}
+    {tools.length > 0 && (
+      <div class="grid tool-grid" role="list">
+        {tools.map((tool) => <ToolCard tool={tool} />)}
+      </div>
+    )}
 
     {tools.length === 0 && (
       <div class="empty">
@@ -60,3 +49,7 @@ const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_
 <script>
   import '../scripts/filter.ts';
 </script>
+
+<style>
+  .tool-grid { padding-top: 40px; }
+</style>

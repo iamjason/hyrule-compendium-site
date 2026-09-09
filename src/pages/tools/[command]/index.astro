@@ -4,7 +4,7 @@ import type { Tool, Release, Platform } from '../../../types';
 import Base from '../../../layouts/Base.astro';
 import StatusBadge from '../../../components/StatusBadge.astro';
 import CopyButton from '../../../components/CopyButton.astro';
-import { tools, CATEGORY_LABELS, isRecent } from '../../../lib/tools';
+import { tools, isRecent } from '../../../lib/tools';
 import { href, formatDate } from '../../../lib/paths';
 
 export const getStaticPaths: GetStaticPaths = () => {
@@ -37,11 +37,10 @@ const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linu
       <p class="tagline">{tool.tagline}</p>
 
       <div class="tool-meta">
-        <span>{CATEGORY_LABELS[tool.category]}</span>
         {tool.repo.language && <span>{tool.repo.language}</span>}
         {tool.version && <span>{tool.version}</span>}
         {tool.latestRelease && <span>Released {formatDate(tool.latestRelease.published_at)}</span>}
-        <span>★ {tool.repo.stars}</span>
+        {tool.repo.stars > 0 && <span>★ {tool.repo.stars}</span>}
       </div>
     </div>
   </section>
@@ -121,7 +120,7 @@ const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linu
                   <path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H5.5A1.5 1.5 0 0 1 4 15.5Z" stroke="currentColor" stroke-width="1.6"/>
                   <path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H14a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h4.5a1.5 1.5 0 0 0 1.5-1.5Z" stroke="currentColor" stroke-width="1.6"/>
                 </svg>
-                Documentation
+                Website
               </a>
             )}
             <a href={`${href('changelog/')}#${tool.command}`}>

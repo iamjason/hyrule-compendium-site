@@ -9,7 +9,6 @@
 
 interface Controls {
   search: HTMLInputElement | null;
-  category: HTMLSelectElement | null;
   status: HTMLSelectElement | null;
   language: HTMLSelectElement | null;
   reset: HTMLButtonElement | null;
@@ -18,7 +17,6 @@ interface Controls {
 
 const el: Controls = {
   search: document.querySelector('#f-search'),
-  category: document.querySelector('#f-category'),
   status: document.querySelector('#f-status'),
   language: document.querySelector('#f-language'),
   reset: document.querySelector('#f-reset'),
@@ -26,7 +24,6 @@ const el: Controls = {
 };
 
 const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-tool]'));
-const sections = Array.from(document.querySelectorAll<HTMLElement>('[data-category-section]'));
 const empty = document.querySelector<HTMLElement>('#no-results');
 
 const total = cards.length;
@@ -34,7 +31,6 @@ const total = cards.length;
 function readQuery(): void {
   const params = new URLSearchParams(location.search);
   if (el.search) el.search.value = params.get('q') ?? '';
-  if (el.category) el.category.value = params.get('category') ?? '';
   if (el.status) el.status.value = params.get('status') ?? '';
   if (el.language) el.language.value = params.get('language') ?? '';
 }
@@ -43,7 +39,6 @@ function writeQuery(): void {
   const params = new URLSearchParams();
   const q = el.search?.value.trim();
   if (q) params.set('q', q);
-  if (el.category?.value) params.set('category', el.category.value);
   if (el.status?.value) params.set('status', el.status.value);
   if (el.language?.value) params.set('language', el.language.value);
 
@@ -53,7 +48,6 @@ function writeQuery(): void {
 
 function apply(): void {
   const q = (el.search?.value ?? '').trim().toLowerCase();
-  const category = el.category?.value ?? '';
   const status = el.status?.value ?? '';
   const language = el.language?.value ?? '';
 
@@ -65,7 +59,6 @@ function apply(): void {
     const hay = card.dataset.search ?? '';
     const match =
       terms.every((t) => hay.includes(t)) &&
-      (!category || card.dataset.category === category) &&
       (!status || card.dataset.status === status) &&
       (!language || card.dataset.language === language);
 
@@ -73,15 +66,7 @@ function apply(): void {
     if (match) shown++;
   }
 
-  // Collapse a category heading once all of its cards are filtered out.
-  for (const section of sections) {
-    const visible = section.querySelectorAll('[data-tool][data-hidden="false"]').length;
-    section.dataset.hidden = visible === 0 ? 'true' : 'false';
-    const n = section.querySelector<HTMLElement>('[data-section-count]');
-    if (n) n.textContent = String(visible);
-  }
-
-  const filtering = Boolean(q || category || status || language);
+  const filtering = Boolean(q || status || language);
   if (empty) empty.hidden = shown !== 0;
   if (el.reset) el.reset.hidden = !filtering;
   if (el.count) {
@@ -93,7 +78,6 @@ function apply(): void {
 
 function clear(): void {
   if (el.search) el.search.value = '';
-  if (el.category) el.category.value = '';
   if (el.status) el.status.value = '';
   if (el.language) el.language.value = '';
   apply();
@@ -101,7 +85,6 @@ function clear(): void {
 }
 
 el.search?.addEventListener('input', apply);
-el.category?.addEventListener('change', apply);
 el.status?.addEventListener('change', apply);
 el.language?.addEventListener('change', apply);
 el.reset?.addEventListener('click', clear);
