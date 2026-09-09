@@ -11,13 +11,6 @@ export function toolByCommand(command: string): Tool | undefined {
   return tools.find((t) => t.command === command);
 }
 
-/** Every language present, for the filter control. */
-export function languages(): string[] {
-  const set = new Set<string>();
-  for (const t of tools) if (t.repo.language) set.add(t.repo.language);
-  return [...set].sort();
-}
-
 /** Every release across every tool, newest first. */
 export function changelog(): ChangelogEntry[] {
   return tools

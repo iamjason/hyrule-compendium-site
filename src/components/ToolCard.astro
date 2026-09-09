@@ -8,25 +8,9 @@ interface Props { tool: Tool; }
 const { tool } = Astro.props;
 
 const fresh = isRecent(tool.latestRelease?.published_at ?? null);
-
-// Everything the client-side filter matches against, lowercased once at build.
-const haystack = [
-  tool.name,
-  tool.command,
-  tool.tagline,
-  tool.repo.language ?? '',
-  tool.repo.full_name,
-  ...tool.platforms,
-].join(' ').toLowerCase();
 ---
 
-<article
-  class="card"
-  data-tool
-  data-status={tool.status}
-  data-language={tool.repo.language ?? ''}
-  data-search={haystack}
->
+<article class="card">
   <div class="card-top">
     {tool.icon && (
       <img

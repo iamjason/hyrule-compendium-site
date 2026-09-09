@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import ToolCard from '../components/ToolCard.astro';
-import FilterBar from '../components/FilterBar.astro';
 import { tools, isRecent } from '../lib/tools';
 
 const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_at ?? null)).length;
@@ -23,8 +22,6 @@ const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_
     </div>
   </section>
 
-  <FilterBar />
-
   <div class="wrap">
     {tools.length > 0 && (
       <div class="grid tool-grid" role="list">
@@ -38,18 +35,9 @@ const shippedRecently = tools.filter((t) => isRecent(t.latestRelease?.published_
         Tag a repo with the <code>hyrule-tool</code> topic and run <code>npm run fetch</code>.
       </div>
     )}
-
-    <div class="empty" id="no-results" hidden>
-      <strong>Nothing matches those filters.</strong>
-      Try a broader search, or clear the filters.
-    </div>
   </div>
 </Base>
 
-<script>
-  import '../scripts/filter.ts';
-</script>
-
 <style>
-  .tool-grid { padding-top: 40px; }
+  .tool-grid { padding-top: 44px; }
 </style>

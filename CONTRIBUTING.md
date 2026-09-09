@@ -65,9 +65,12 @@ repo — the next run will drop it from the catalogue.
 - Adding a status means editing three places in step:
   `schema/hyrule.schema.json`, `scripts/lib/normalize.mjs`, and `src/types.ts`,
   plus a `.badge-<status>` rule in `src/styles/global.css`.
-- There is deliberately no category taxonomy. The catalogue is one flat grid;
-  search, status and language are enough to find things at this size. Grouping
-  is worth adding back when the shelf is long enough to need it.
+- There is deliberately no category taxonomy, and no search or filter controls.
+  The catalogue is one flat grid: with a handful of tools, every entry is on
+  screen at once and a filter bar is furniture that filters nothing. Both are
+  worth adding back when the grid grows past roughly a dozen tools and stops
+  fitting on one screen — the removed filter bar and its client script are in
+  git history if you want them back rather than rewritten.
 - Keep dependencies minimal. The current set is `astro` at runtime and
   `ajv` + `typescript` for tooling. Adding one should need a reason beyond
   convenience.

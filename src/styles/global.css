@@ -221,55 +221,6 @@ main { flex: 1; padding-bottom: 72px; }
 }
 .hero .counts b { color: var(--text); font-weight: 500; }
 
-/* ─── Filter bar ────────────────────────────────────────────────────────── */
-
-.filters {
-  position: sticky; top: 0; z-index: 20;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-  padding: 14px 0;
-}
-.filters .wrap { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-
-.search-field { position: relative; flex: 1 1 260px; min-width: 200px; }
-.search-field svg {
-  position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
-  width: 15px; height: 15px; color: var(--text-faint); pointer-events: none;
-}
-.search-field input {
-  width: 100%; padding: 9px 12px 9px 34px;
-  font-family: var(--font-body); font-size: 0.92rem;
-  color: var(--text); background: var(--surface);
-  border: 1px solid var(--border); border-radius: var(--r-md);
-}
-.search-field input::placeholder { color: var(--text-faint); }
-.search-field input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px var(--accent-tint); }
-
-.select-field { position: relative; }
-.select-field select {
-  appearance: none;
-  padding: 9px 30px 9px 12px;
-  font-family: var(--font-ui); font-size: 0.86rem; font-weight: 500;
-  color: var(--text); background: var(--surface);
-  border: 1px solid var(--border); border-radius: var(--r-md);
-  cursor: pointer;
-}
-.select-field select:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px var(--accent-tint); }
-.select-field::after {
-  content: ''; position: absolute; right: 12px; top: 50%;
-  width: 6px; height: 6px; margin-top: -4px;
-  border-right: 1.6px solid var(--text-muted); border-bottom: 1.6px solid var(--text-muted);
-  transform: rotate(45deg); pointer-events: none;
-}
-.filters button.reset {
-  padding: 9px 13px; font-family: var(--font-ui); font-size: 0.84rem; font-weight: 500;
-  color: var(--text-muted); background: transparent;
-  border: 1px solid var(--border); border-radius: var(--r-md); cursor: pointer;
-}
-.filters button.reset:hover { color: var(--text); border-color: var(--border-strong); }
-.filters button.reset[hidden] { display: none; }
-
 /* ─── Tool grid ─────────────────────────────────────────────────────────── */
 
 .grid {
@@ -342,7 +293,6 @@ main { flex: 1; padding-bottom: 72px; }
   padding: 64px 24px; text-align: center; color: var(--text-muted);
   border: 1px dashed var(--border); border-radius: var(--r-lg); margin-top: 40px;
 }
-.empty[hidden] { display: none; }
 .empty strong { display: block; font-family: var(--font-ui); color: var(--text); margin-bottom: 6px; }
 
 /* ─── Detail page ───────────────────────────────────────────────────────── */
@@ -515,6 +465,3 @@ main { flex: 1; padding-bottom: 72px; }
   font-size: 0.83rem; color: var(--text-faint);
 }
 .site-footer .right { margin-left: auto; font-family: var(--font-mono); font-size: 0.78rem; }
-
-/* Filter hiding */
-[data-hidden='true'] { display: none !important; }
