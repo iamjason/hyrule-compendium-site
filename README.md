@@ -167,6 +167,13 @@ npm run fetch:dry               # show what would change, write nothing
 npm run fetch                   # rewrite data/tools.json
 ```
 
+**Empty-discovery guard.** If discovery returns zero repos while
+`data/tools.json` still holds entries, the fetch keeps the existing data and
+logs a warning instead of emptying the catalogue — a drop from N to 0 is far
+more often a transient API or auth failure than every tool being untagged at
+once. When you really do mean it, run
+`node scripts/fetch-tools.mjs --allow-empty`.
+
 | Variable | Default | Purpose |
 |---|---|---|
 | `GITHUB_TOKEN` | — | Raises the API rate limit. Read-only; public data only. |

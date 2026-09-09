@@ -25,6 +25,7 @@ const OUT = resolve(root, 'data/tools.json');
 const OWNER = process.env.GITHUB_OWNER ?? 'iamjason';
 const TOPIC = process.env.HYRULE_TOPIC ?? 'hyrule-tool';
 const DRY_RUN = process.argv.includes('--dry-run');
+const ALLOW_EMPTY = process.argv.includes('--allow-empty');
 
 const warnings = [];
 
@@ -96,6 +97,22 @@ async function main() {
   console.log(`Discovering repos: user:${OWNER} topic:${TOPIC}`);
   const repos = await discoverRepos();
   console.log(`Found ${repos.length} repo(s).\n`);
+
+  // Discovery dropping to zero when we previously had entries is almost always
+  // a transient API/auth failure, not every tool being untagged at once. Refuse
+  // to overwrite a good catalogue with an empty one; pass --allow-empty to mean
+  // it. This is not an error: the site keeps building from the existing data.
+  if (repos.length === 0) {
+    const existing = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : { tools: [] };
+    if (existing.tools?.length > 0 && !ALLOW_EMPTY) {
+      console.log(
+        `::warning::Discovery returned 0 repos but data/tools.json holds ` +
+          `${existing.tools.length}. Keeping the existing data — re-run with ` +
+          `--allow-empty if every tool really was untagged.`,
+      );
+      return;
+    }
+  }
 
   const tools = [];
   for (const repo of repos) {
