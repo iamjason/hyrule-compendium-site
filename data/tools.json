@@ -11,19 +11,19 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 2,
-            "name": "Deku-0.2.12.zip",
-            "size": 12066299,
-            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.12/Deku-0.2.12.zip"
+            "downloads": 0,
+            "name": "Deku-0.2.13.zip",
+            "size": 12062150,
+            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.13/Deku-0.2.13.zip"
           }
         ],
-        "body": "Deku 0.2.12 — signed and notarized for macOS.",
-        "bodyHtml": "<p dir=\"auto\">Deku 0.2.12 — signed and notarized for macOS.</p>",
-        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.12",
-        "name": "Deku 0.2.12",
+        "body": "Deku 0.2.13 — signed and notarized for macOS.",
+        "bodyHtml": "<p dir=\"auto\">Deku 0.2.13 — signed and notarized for macOS.</p>",
+        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.13",
+        "name": "Deku 0.2.13",
         "prerelease": false,
-        "published_at": "2026-09-09T01:36:22Z",
-        "tag": "v0.2.12"
+        "published_at": "2026-09-09T06:22:52Z",
+        "tag": "v0.2.13"
       },
       "manifestOk": true,
       "name": "Deku",
@@ -36,7 +36,25 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 2,
+              "downloads": 0,
+              "name": "Deku-0.2.13.zip",
+              "size": 12062150,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.13/Deku-0.2.13.zip"
+            }
+          ],
+          "body": "Deku 0.2.13 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.13 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.13",
+          "name": "Deku 0.2.13",
+          "prerelease": false,
+          "published_at": "2026-09-09T06:22:52Z",
+          "tag": "v0.2.13"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 3,
               "name": "Deku-0.2.12.zip",
               "size": 12066299,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.12/Deku-0.2.12.zip"
@@ -281,8 +299,38 @@
       },
       "status": "beta",
       "tagline": "Makes a tangled Git history readable and staging commits quick.",
-      "updatedAt": "2026-09-09T01:36:22Z",
-      "version": "v0.2.12"
+      "updatedAt": "2026-09-09T06:22:52Z",
+      "version": "v0.2.13"
+    },
+    {
+      "command": "fnb",
+      "docs": null,
+      "icon": "https://raw.githubusercontent.com/iamjason/fang-and-bone-site/main/assets/fang-and-bone-icon.png",
+      "install": "brew install jason/tap/fnb",
+      "latestRelease": null,
+      "manifestOk": true,
+      "name": "Fang and Bone",
+      "platforms": [
+        "macos"
+      ],
+      "readmeHtml": "<p align=\"center\" dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"assets/fang-and-bone-icon.png\"><img src=\"assets/fang-and-bone-icon.png\" alt=\"Fang &amp; Bone: a purple monster with ivory horns, fangs, and a bone charm\" width=\"240\" height=\"240\" style=\"max-width: 100%; height: auto; max-height: 240px;\"></a></p>\n<p dir=\"auto\">App Store Connect user and TestFlight maintenance from your terminal.</p>\n<p dir=\"auto\">This repo is the public face of <code>fnb</code> — downloads, release notes, and this\npage. The source is private.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h3 class=\"heading-element\" dir=\"auto\">Why \"Fang and Bone\"?</h3></div>\n<p dir=\"auto\">In <em>Breath of the Wild</em> and <em>Tears of the Kingdom</em>, Kilton runs a shop by\nthat name — a cart that only turns up after dark, buying monster parts no\nother merchant in Hyrule will touch, one piece at a time, for a currency no\nother shop accepts. That's the shape of this problem, too: App Store\nConnect access is made of oddly-specific parts — a team role here, a\nper-app visibility grant there, a TestFlight group membership somewhere\nelse — and there is no single screen in Apple's UI that trades in all of\nthem at once. <code>fnb</code> is the shop that does: hand it a person, and it deals in\nexactly the parts that make up their access, onboard or off, no more and no\nless.</p>\n<p dir=\"auto\">Adding a new hire to TestFlight across several apps is a multi-day, multi-step\nchore in the App Store Connect web UI, and the steps have to happen in order:</p>\n<ol dir=\"auto\">\n<li>Invite them to the App Store Connect team with a role and app visibility.</li>\n<li>Wait for them to accept — <strong>Apple expires the invitation after 3 days.</strong></li>\n<li>Add them as a TestFlight tester in each app's internal beta group.</li>\n</ol>\n<p dir=\"auto\">Step 3 cannot happen before step 2. Apple enforces that server-side. So:</p>\n<div class=\"highlight highlight-text-shell-session notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ fnb onboard jane@example.com --as ios-engineer\n\nOnboarding jane@example.com\n  ● invite jane@example.com to the team as DEVELOPER with access to 2 app(s)\n  ○ jane@example.com has not accepted their team invitation yet\n\n  Next: jane@example.com accepts the email from Apple, then re-run this command.\n  Check progress any time with: fnb status jane@example.com\"><pre>$ <span class=\"pl-s1\">fnb onboard jane@example.com --as ios-engineer</span>\n\n<span class=\"pl-c1\">Onboarding jane@example.com</span>\n<span class=\"pl-c1\">  ● invite jane@example.com to the team as DEVELOPER with access to 2 app(s)</span>\n<span class=\"pl-c1\">  ○ jane@example.com has not accepted their team invitation yet</span>\n\n<span class=\"pl-c1\">  Next: jane@example.com accepts the email from Apple, then re-run this command.</span>\n<span class=\"pl-c1\">  Check progress any time with: fnb status jane@example.com</span></pre></div>\n<p dir=\"auto\">Then, once she accepts, <strong>the same command finishes the job</strong>:</p>\n<div class=\"highlight highlight-text-shell-session notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ fnb onboard jane@example.com --as ios-engineer\n\nOnboarding jane@example.com\n  ● grant visibility of 2 app(s)\n  ● add jane@example.com as a TestFlight tester in 2 group(s)\n  – TestFlight emails the tester automatically once a build is available to their group\n\n  ✓ jane@example.com is set up\"><pre>$ <span class=\"pl-s1\">fnb onboard jane@example.com --as ios-engineer</span>\n\n<span class=\"pl-c1\">Onboarding jane@example.com</span>\n<span class=\"pl-c1\">  ● grant visibility of 2 app(s)</span>\n<span class=\"pl-c1\">  ● add jane@example.com as a TestFlight tester in 2 group(s)</span>\n<span class=\"pl-c1\">  – TestFlight emails the tester automatically once a build is available to their group</span>\n\n<span class=\"pl-c1\">  ✓ jane@example.com is set up</span></pre></div>\n<p dir=\"auto\">Running it repeatedly is safe. It reads live state each time and only does what\nis still missing, so a fully onboarded person produces an empty plan.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Install</h2></div>\n<div class=\"highlight highlight-text-shell-session notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"brew install jason/tap/fnb\"><pre><span class=\"pl-c1\">brew install jason/tap/fnb</span></pre></div>\n<p dir=\"auto\">Homebrew 6 added tap trust, so the fully-qualified name matters —\n<code>brew tap</code> followed by <code>brew install fnb</code> will fail.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Getting started</h2></div>\n<div class=\"highlight highlight-text-shell-session notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"fnb auth login     # guided; stores the key in your keychain\nfnb doctor         # verifies credentials, permissions, and presets\"><pre><span class=\"pl-c1\">fnb auth login     # guided; stores the key in your keychain</span>\n<span class=\"pl-c1\">fnb doctor         # verifies credentials, permissions, and presets</span></pre></div>\n<p dir=\"auto\"><code>fnb auth login</code> opens the right App Store Connect page, watches <code>~/Downloads</code>\nfor the <code>AuthKey_*.p8</code> you download, reads the Key ID out of its filename, asks\nonly for the Issuer ID, verifies the key against the live API, and offers to\nshred the downloaded file.</p>\n<p dir=\"auto\">You need a <strong>Team key with the Admin role</strong>. Apple provides no API for creating\nAPI keys — that is the root of trust, so it is web UI only — and your Account\nHolder must have requested App Store Connect API access once, ever, before any\nkey can exist.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Config</h2></div>\n<p dir=\"auto\">Presets turn a role and a list of apps into one word. Put this in\n<code>~/.config/fnb/fnb.toml</code>, or in <code>./fnb.toml</code> to commit it alongside a project:</p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[preset.ios-engineer]\nrole = &quot;DEVELOPER&quot;\napps = [&quot;acme&quot;, &quot;acme-qa&quot;]\n\n[preset.product]\nrole = &quot;MARKETING&quot;\napps = [&quot;acme&quot;]\n\n[alias]\nacme = &quot;com.example.Acme&quot;\nacme-qa = &quot;com.example.AcmeQA&quot;\"><pre>[<span class=\"pl-en\">preset</span>.<span class=\"pl-en\">ios-engineer</span>]\n<span class=\"pl-smi\">role</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>DEVELOPER<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-smi\">apps</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>acme<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>acme-qa<span class=\"pl-pds\">\"</span></span>]\n\n[<span class=\"pl-en\">preset</span>.<span class=\"pl-en\">product</span>]\n<span class=\"pl-smi\">role</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>MARKETING<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-smi\">apps</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>acme<span class=\"pl-pds\">\"</span></span>]\n\n[<span class=\"pl-en\">alias</span>]\n<span class=\"pl-smi\">acme</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>com.example.Acme<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-smi\">acme-qa</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>com.example.AcmeQA<span class=\"pl-pds\">\"</span></span></pre></div>\n<p dir=\"auto\">Point engineers at your QA builds rather than production, and leave the\nproduction alias defined but out of the default preset — granting it then\ntakes a deliberate one-off rather than happening by accident.</p>\n<p dir=\"auto\">Aliases map to <strong>bundle IDs</strong> on purpose: Apple's name filter is exact-match\nonly and display names change, while bundle IDs do not.</p>\n<p dir=\"auto\">Config is validated on load, so mistakes surface immediately rather than as a\nconfusing API error later. A preset pairing <code>ADMIN</code> or <code>FINANCE</code> with an <code>apps</code>\nlist is rejected, because Apple gives those roles access to every app and\nsilently ignores the scoping.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Commands</h2></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"fnb onboard &lt;email&gt; --as &lt;preset&gt;     the flagship — re-runnable, resumes\nfnb offboard &lt;email&gt;                  mirror image; confirms first\nfnb status &lt;email&gt;                    one person, everything about them\nfnb doctor                            check credentials, permissions, config\n\nfnb auth      login | status | logout | token\nfnb apps      list\nfnb users     list\nfnb invites   list | cancel\nfnb groups    list\nfnb testers   list | add | remove\nfnb config    list | path\nfnb api       &lt;path&gt;                  raw authenticated passthrough\"><pre class=\"notranslate\"><code>fnb onboard &lt;email&gt; --as &lt;preset&gt;     the flagship — re-runnable, resumes\nfnb offboard &lt;email&gt;                  mirror image; confirms first\nfnb status &lt;email&gt;                    one person, everything about them\nfnb doctor                            check credentials, permissions, config\n\nfnb auth      login | status | logout | token\nfnb apps      list\nfnb users     list\nfnb invites   list | cancel\nfnb groups    list\nfnb testers   list | add | remove\nfnb config    list | path\nfnb api       &lt;path&gt;                  raw authenticated passthrough\n</code></pre></div>\n<p dir=\"auto\">Every step <code>onboard</code> performs is also available as its own command, for when you\nwant one specific change and nothing else.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h3 class=\"heading-element\" dir=\"auto\">Useful flags</h3></div>\n<ul dir=\"auto\">\n<li><code>--dry-run</code> — print the plan and change nothing.</li>\n<li><code>--json</code> — machine-readable output on stdout, with sorted keys so diffs are\nstable. Progress is suppressed, so <code>fnb ... --json | jq</code> is clean.</li>\n<li><code>-y, --yes</code> — skip confirmations. Required for destructive actions in scripts:\na non-TTY without <code>--yes</code> is a <strong>hard error</strong>, never an assumed yes.</li>\n<li><code>--create-groups</code> — create an internal beta group for apps that lack one.\nOff by default, since silently creating groups in your account is a surprise.</li>\n<li><code>--allow-role-change</code> — permit raising an existing member's role so they\nbecome eligible to test.</li>\n</ul>\n<div class=\"markdown-heading\" dir=\"auto\"><h3 class=\"heading-element\" dir=\"auto\">Exit codes</h3></div>\n<markdown-accessiblity-table><table>\n<thead>\n<tr>\n<th>Code</th>\n<th>Meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>success</td>\n</tr>\n<tr>\n<td>1</td>\n<td>error</td>\n</tr>\n<tr>\n<td>2</td>\n<td>cancelled</td>\n</tr>\n<tr>\n<td>4</td>\n<td>authentication required or insufficient key permissions</td>\n</tr>\n<tr>\n<td>64</td>\n<td>bad usage</td>\n</tr>\n</tbody>\n</table></markdown-accessiblity-table>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Mac app</h2></div>\n<p dir=\"auto\">The same engine, with a window — a SwiftUI app for macOS 26 that imports the\ncore library directly. It never shells out to <code>fnb</code>, so the two agree by\nconstruction: the app renders the same plan the CLI prints.</p>\n<p dir=\"auto\">What it does, screen by screen: <strong>Onboard</strong> and <strong>Offboard</strong> preview a plan\nbefore running it, show live progress per step, and ask before anything that\nchanges permissions. Onboard can also watch for the invitation to be accepted\nand finish the job automatically — the <code>--wait</code> mode the CLI never got.\n<strong>Look Up</strong> is <code>fnb status</code> across every app in the account. <strong>Apps</strong>, <strong>Team</strong>,\n<strong>Invitations</strong> and <strong>Testers</strong> are the inspect commands as sortable tables\nwith the obvious actions in context menus. <strong>Doctor</strong> runs the same checks as\n<code>fnb doctor</code>. <strong>Presets</strong> edits the config natively and writes the same TOML,\nand can link the CLI's own <code>fnb.toml</code> so both share one file. <strong>API Console</strong>\nis <code>fnb api</code>. <strong>Activity</strong> records every write the app made, which the CLI\ncannot do.</p>\n<p dir=\"auto\">Sign-in mirrors <code>fnb auth login</code>: it opens the right App Store Connect page,\nwatches Downloads for the <code>.p8</code>, reads the Key ID from the filename, verifies\nthe key against the live API before storing it, and shreds the download.</p>\n<p dir=\"auto\">The app is hardened, and deliberately <em>not</em> sandboxed: the in-app updater\nreplaces the app's own bundle in <code>/Applications</code> and relaunches it, which no\ncontainer can reach. Everything else is written as if the sandbox were still on\n— security-scoped bookmarks, no path assumptions — and every entitlement is\njustified in the project file. The app and the CLI keep <strong>separate</strong> keychain\nitems; the sign-in sheet offers to adopt the CLI's key so you only download one.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Design notes</h2></div>\n<p dir=\"auto\">Some Apple behavior is non-obvious enough to be worth stating, since it shaped\nthe tool:</p>\n<ul dir=\"auto\">\n<li><strong>Internal testers are <code>betaTester</code> records, not team users.</strong> There is no\nlink from a <code>users</code> record to a beta group. What makes a tester <em>internal</em> is\nthe group's <code>isInternalGroup</code> flag, and Apple enforces the\n\"must be an accepted team member\" rule as a rejection at link time — an\nundocumented <code>409 STATE_ERROR</code>. <code>fnb</code> plans around it and translates it into\nplain English if it fires anyway.</li>\n<li><strong>There is no resend endpoint for team invitations.</strong> Re-inviting is a delete\nfollowed by a fresh create, which is what <code>fnb</code> does for an expired invite.</li>\n<li><strong>Adding a tester to a group auto-emails them</strong> — but only once a build is\navailable to that group. <code>fnb</code> says so rather than implying mail went out.</li>\n<li><strong>Apple sends no <code>Retry-After</code></strong>, even on 429, so rate limits get exponential\nbackoff with jitter.</li>\n<li><strong>Offboarding is not instant.</strong> Apple caches access for up to 10 minutes.</li>\n</ul>\n<p dir=\"auto\">The CLI keeps credentials in the macOS login keychain via <code>/usr/bin/security</code>,\nthe same approach <code>gh</code> takes. This is deliberate: a keychain item's ACL records\nthe signing identity of whichever binary created it, and an ad-hoc-signed\nbinary's identity changes on every rebuild — as does a Homebrew binary's on\nevery upgrade — which revokes the grant and re-prompts forever. Letting Apple's\nown stable-identity tool own the item avoids that entirely. The trade, stated\nplainly: confidentiality becomes user-level rather than per-application, since\nany process running as you can read the key by invoking <code>security</code> itself.</p>",
+      "releases": [],
+      "repo": {
+        "archived": false,
+        "description": "Fang and Bone (fnb) — App Store Connect and TestFlight maintenance from your terminal. Downloads and site; source is private.",
+        "full_name": "iamjason/fang-and-bone-site",
+        "html_url": "https://github.com/iamjason/fang-and-bone-site",
+        "issues_url": "https://github.com/iamjason/fang-and-bone-site/issues",
+        "language": "Swift",
+        "stars": 0,
+        "topics": [
+          "hyrule-tool"
+        ]
+      },
+      "status": "experimental",
+      "tagline": "Onboards and offboards App Store Connect team members and TestFlight testers in one re-runnable command.",
+      "updatedAt": "2026-09-09T06:50:48Z",
+      "version": null
     },
     {
       "command": "korok",
@@ -293,7 +341,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 2,
+            "downloads": 3,
             "name": "Korok-0.3.3.zip",
             "size": 26853007,
             "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.3/Korok-0.3.3.zip"
@@ -318,7 +366,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 2,
+              "downloads": 3,
               "name": "Korok-0.3.3.zip",
               "size": 26853007,
               "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.3/Korok-0.3.3.zip"
