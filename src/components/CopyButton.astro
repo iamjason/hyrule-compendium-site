@@ -1,0 +1,48 @@
+---
+interface Props { value: string; label?: string; }
+const { value, label = 'Copy' } = Astro.props;
+---
+<button class="copy-btn" type="button" data-copy={value} aria-label={`Copy: ${value}`}>
+  <svg class="i-copy" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <rect x="9" y="9" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M5 15V6a2 2 0 0 1 2-2h9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+  </svg>
+  <svg class="i-done" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="m4.5 12.5 5 5 10-11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span class="copy-label">{label}</span>
+</button>
+
+<script>
+  // One delegated listener covers every copy button on the page.
+  document.addEventListener('click', async (event) => {
+    const btn = (event.target as HTMLElement)?.closest<HTMLButtonElement>('.copy-btn');
+    if (!btn) return;
+
+    const value = btn.dataset.copy ?? '';
+    const label = btn.querySelector('.copy-label');
+    const original = label?.textContent ?? 'Copy';
+
+    try {
+      await navigator.clipboard.writeText(value);
+    } catch {
+      // Clipboard API needs a secure context; fall back to a hidden textarea.
+      const ta = document.createElement('textarea');
+      ta.value = value;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
+      document.body.appendChild(ta);
+      ta.select();
+      // execCommand is deprecated but is the only non-secure-context fallback.
+      try { (document as unknown as { execCommand(c: string): boolean }).execCommand('copy'); } catch { /* give up quietly */ }
+      ta.remove();
+    }
+
+    btn.dataset.copied = 'true';
+    if (label) label.textContent = 'Copied';
+    window.setTimeout(() => {
+      delete btn.dataset.copied;
+      if (label) label.textContent = original;
+    }, 1600);
+  });
+</script>

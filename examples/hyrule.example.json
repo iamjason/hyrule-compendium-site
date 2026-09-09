@@ -1,0 +1,11 @@
+{
+  "$schema": "https://iamjason.github.io/hyrule-compendium-site/schema/hyrule.schema.json",
+  "name": "Korok",
+  "command": "korok",
+  "tagline": "Finds what is hidden in your repo.",
+  "category": "search",
+  "status": "stable",
+  "install": "brew install jason/tap/korok",
+  "platforms": ["macos", "linux"],
+  "docs": "https://iamjason.github.io/korok/"
+}

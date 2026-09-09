@@ -1,0 +1,26 @@
+{
+  "name": "hyrule-compendium",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A self-updating directory of Jason's developer tools.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "fetch": "node scripts/fetch-tools.mjs",
+    "fetch:dry": "node scripts/fetch-tools.mjs --dry-run",
+    "validate": "node scripts/validate-manifest.mjs",
+    "contrast": "node scripts/check-contrast.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "typescript": "^5.9.0"
+  }
+}

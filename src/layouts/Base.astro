@@ -1,0 +1,121 @@
+---
+import '../styles/global.css';
+import { href } from '../lib/paths';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Which nav item to mark aria-current. */
+  nav?: 'tools' | 'changelog' | null;
+}
+
+const {
+  title,
+  description = 'A self-updating directory of Jason’s developer tools.',
+  nav = null,
+} = Astro.props;
+
+const full = title === 'Compendium' ? title : `${title} · Compendium`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{full}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={full} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href={href('favicon.svg')} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    {/* Set the theme before first paint so there is no flash. */}
+    <script is:inline>
+      (function () {
+        try {
+          var saved = localStorage.getItem('hyrule-theme');
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.dataset.theme = saved;
+          } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.documentElement.dataset.theme = 'light';
+          }
+        } catch (e) {
+          /* private mode: fall through to the dark default */
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={href()}>
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 2 3 7v10l9 5 9-5V7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3.1" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 2v6.9M12 15.1V22M3 7l6 3.5M15 13.5 21 17" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+          </svg>
+          Compendium
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href={href()} aria-current={nav === 'tools' ? 'page' : undefined}>Tools</a>
+          <a href={href('changelog/')} aria-current={nav === 'changelog' ? 'page' : undefined}>Changelog</a>
+
+          <button
+            class="theme-toggle"
+            type="button"
+            id="theme-toggle"
+            aria-label="Switch between light and dark theme"
+          >
+            <svg class="i-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"
+                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+            <svg class="i-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.5 1.5M17.1 17.1l1.5 1.5M18.6 5.4l-1.5 1.5M6.9 17.1l-1.5 1.5"
+                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <span>Generated from repos tagged <code>hyrule-tool</code>. Never hand-edited.</span>
+        <span class="right">
+          <a href="https://github.com/iamjason/hyrule-compendium-site">Source</a>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById('theme-toggle');
+      toggle?.addEventListener('click', () => {
+        const root = document.documentElement;
+        const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+        root.dataset.theme = next;
+        try {
+          localStorage.setItem('hyrule-theme', next);
+        } catch {
+          /* nothing to persist to; the toggle still works for this page view */
+        }
+      });
+    </script>
+  </body>
+</html>

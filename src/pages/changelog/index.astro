@@ -1,0 +1,73 @@
+---
+import Base from '../../layouts/Base.astro';
+import { changelog, isRecent } from '../../lib/tools';
+import { href, formatDate } from '../../lib/paths';
+
+const entries = changelog();
+
+// Group by year so a long feed stays navigable.
+const years: { year: number; items: typeof entries }[] = [];
+for (const entry of entries) {
+  const year = new Date(entry.published_at).getUTCFullYear();
+  const last = years.at(-1);
+  if (last?.year === year) last.items.push(entry);
+  else years.push({ year, items: [entry] });
+}
+
+const toolCount = new Set(entries.map((e) => e.toolCommand)).size;
+---
+
+<Base
+  title="Changelog"
+  description="Everything that shipped across every tool, newest first."
+  nav="changelog"
+>
+  <section class="hero traced">
+    <div class="wrap">
+      <h1>Changelog</h1>
+      <p>Every release across every tool, merged into one feed, newest first.</p>
+      <div class="counts">
+        <span><b>{entries.length}</b> releases</span>
+        <span><b>{toolCount}</b> tools</span>
+        {entries[0] && <span>latest <b>{formatDate(entries[0].published_at)}</b></span>}
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    {entries.length === 0 ? (
+      <div class="empty">
+        <strong>Nothing has shipped yet.</strong>
+        Releases appear here as soon as a tool publishes one on GitHub.
+      </div>
+    ) : (
+      years.map(({ year, items }) => (
+        <>
+          <h2 class="year-rule">{year}</h2>
+          <ol class="feed">
+            {items.map((entry) => (
+              <li class="feed-item" id={entry.toolCommand}>
+                <div class="feed-when">
+                  <time datetime={entry.published_at}>{formatDate(entry.published_at)}</time>
+                </div>
+                <div>
+                  <div class="feed-head">
+                    <a class="tool" href={href(`tools/${entry.toolCommand}/`)}>{entry.toolName}</a>
+                    <a
+                      class={isRecent(entry.published_at) ? 'tag new' : 'tag'}
+                      href={entry.html_url}
+                    >{entry.tag}</a>
+                    {entry.prerelease && <span class="badge badge-experimental">pre-release</span>}
+                  </div>
+                  {entry.bodyHtml
+                    ? <div class="prose" set:html={entry.bodyHtml} />
+                    : <p class="release-name">No release notes.</p>}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </>
+      ))
+    )}
+  </div>
+</Base>

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://iamjason.github.io/hyrule-compendium-site/schema/hyrule.schema.json",
+  "title": "Hyrule Compendium tool manifest",
+  "description": "Manifest for a tool listed in the Hyrule Compendium. Lives at the root of a tool repo as `hyrule.json`. Values here override metadata fetched from the GitHub API.",
+  "type": "object",
+  "required": ["name", "command", "tagline", "category", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional pointer to this schema, for editor autocomplete."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the tool. Overrides the repo name.",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "command": {
+      "type": "string",
+      "description": "The binary/command name. Used as the URL slug: /tools/<command>/. Must be unique across the Compendium.",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "tagline": {
+      "type": "string",
+      "description": "One sentence, shown on the card. Overrides the repo description.",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "category": {
+      "type": "string",
+      "description": "Which shelf of the Compendium this tool sits on.",
+      "enum": ["build", "time", "search", "move", "guard", "environment", "knowledge"]
+    },
+    "status": {
+      "type": "string",
+      "description": "Maturity. Drives the status badge on the card.",
+      "enum": ["stable", "beta", "experimental", "archived"]
+    },
+    "install": {
+      "type": "string",
+      "description": "A single copy-pasteable install command. Rendered with a copy button.",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "platforms": {
+      "type": "array",
+      "description": "Platforms the tool runs on.",
+      "items": {
+        "type": "string",
+        "enum": ["macos", "linux", "windows"]
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "docs": {
+      "type": "string",
+      "description": "Absolute URL to external documentation, if the README is not the whole story.",
+      "format": "uri",
+      "pattern": "^https?://"
+    }
+  }
+}

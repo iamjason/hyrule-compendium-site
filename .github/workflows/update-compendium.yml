@@ -1,0 +1,106 @@
+name: Update Compendium
+
+on:
+  schedule:
+    # 06:15 UTC daily. Off the hour on purpose — the top of the hour is the
+    # most contended slot on GitHub's scheduler.
+    - cron: '15 6 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [tool-released]
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/tools.json'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: compendium
+  cancel-in-progress: false
+
+env:
+  SITE: https://iamjason.github.io
+  BASE: /hyrule-compendium-site
+
+jobs:
+  refresh:
+    name: Refresh tool data
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch tool metadata
+        env:
+          # Default GITHUB_TOKEN is enough: everything read here is public.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+        run: npm run fetch
+
+      - name: Commit data/tools.json if it changed
+        id: commit
+        run: |
+          if git diff --quiet -- data/tools.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change to data/tools.json."
+            exit 0
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tools.json
+          git commit -m "chore(data): refresh tools.json
+
+          Triggered by ${{ github.event_name }}."
+          git push
+
+  build:
+    name: Build site
+    needs: refresh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Pick up the commit the refresh job just pushed.
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # The site builds purely from the committed data/tools.json — no API
+      # calls here, so a GitHub outage cannot break a deploy.
+      - run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

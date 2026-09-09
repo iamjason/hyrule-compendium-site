@@ -1,0 +1,158 @@
+---
+import type { GetStaticPaths } from 'astro';
+import type { Tool, Release, Platform } from '../../../types';
+import Base from '../../../layouts/Base.astro';
+import StatusBadge from '../../../components/StatusBadge.astro';
+import CopyButton from '../../../components/CopyButton.astro';
+import { tools, CATEGORY_LABELS, isRecent } from '../../../lib/tools';
+import { href, formatDate } from '../../../lib/paths';
+
+export const getStaticPaths: GetStaticPaths = () => {
+  // Deduplicate defensively: two repos can claim the same `command`, and the
+  // fetch script warns about it rather than failing. Astro would hard-error on
+  // duplicate routes, so the first one wins here.
+  const seen = new Set<string>();
+  return tools
+    .filter((tool) => (seen.has(tool.command) ? false : (seen.add(tool.command), true)))
+    .map((tool) => ({ params: { command: tool.command }, props: { tool } }));
+};
+
+interface Props { tool: Tool; }
+const { tool } = Astro.props;
+const platformLabels: Record<Platform | string, string> = { macos: 'macOS', linux: 'Linux', windows: 'Windows' };
+---
+
+<Base title={tool.name} description={tool.tagline} nav="tools">
+  <section class="tool-header traced">
+    <div class="wrap">
+      <a class="crumb" href={href()}>← All tools</a>
+
+      <div class="tool-title">
+        <h1>{tool.name}</h1>
+        <span class="cmd">{tool.command}</span>
+        <StatusBadge status={tool.status} />
+        {isRecent(tool.latestRelease?.published_at ?? null) && <span class="pill-new">New</span>}
+      </div>
+
+      <p class="tagline">{tool.tagline}</p>
+
+      <div class="tool-meta">
+        <span>{CATEGORY_LABELS[tool.category]}</span>
+        {tool.repo.language && <span>{tool.repo.language}</span>}
+        {tool.version && <span>{tool.version}</span>}
+        {tool.latestRelease && <span>Released {formatDate(tool.latestRelease.published_at)}</span>}
+        <span>★ {tool.repo.stars}</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="columns">
+      <div>
+        {tool.readmeHtml ? (
+          <article class="prose" set:html={tool.readmeHtml} />
+        ) : (
+          <div class="empty">
+            <strong>No README found.</strong>
+            Add one to <code>{tool.repo.full_name}</code> and it will appear here.
+          </div>
+        )}
+
+        <section class="release-history">
+          <h2 id="releases">Release history</h2>
+          {tool.releases.length > 0 ? (
+            <ol class="releases">
+              {tool.releases.map((r: Release) => (
+                <li class="release">
+                  <div class="release-head">
+                    <a class="tag" href={r.html_url}>{r.tag}</a>
+                    <time datetime={r.published_at}>{formatDate(r.published_at)}</time>
+                    {r.prerelease && <span class="badge badge-experimental">pre-release</span>}
+                  </div>
+                  {r.name && r.name !== r.tag && <p class="release-name">{r.name}</p>}
+                  {r.bodyHtml
+                    ? <div class="prose" set:html={r.bodyHtml} />
+                    : <p class="release-name">No release notes.</p>}
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <div class="empty">
+              <strong>No releases yet.</strong>
+              The Compendium reads GitHub Releases — a pushed tag alone is not enough.
+            </div>
+          )}
+        </section>
+      </div>
+
+      <aside>
+        {tool.install && (
+          <div class="panel">
+            <h2>Install</h2>
+            <div class="install">
+              <code>{tool.install}</code>
+              <CopyButton value={tool.install} />
+            </div>
+            {tool.platforms.length > 0 && (
+              <div class="platforms">
+                {tool.platforms.map((p: Platform) => <span>{platformLabels[p] ?? p}</span>)}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div class="panel">
+          <h2>Links</h2>
+          <div class="side-links">
+            <a href={tool.repo.html_url}>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.84.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              Repository
+            </a>
+            <a href={tool.repo.issues_url}>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M12 7.5v5M12 16h.01" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+              </svg>
+              Issues
+            </a>
+            {tool.docs && (
+              <a href={tool.docs}>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2H5.5A1.5 1.5 0 0 1 4 15.5Z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H14a2 2 0 0 0-2 2v13a2 2 0 0 1 2-2h4.5a1.5 1.5 0 0 0 1.5-1.5Z" stroke="currentColor" stroke-width="1.6"/>
+                </svg>
+                Documentation
+              </a>
+            )}
+            <a href={`${href('changelog/')}#${tool.command}`}>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16M4 12h16M4 18h9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+              In the changelog
+            </a>
+          </div>
+        </div>
+
+        {!tool.manifestOk && (
+          <div class="panel warn">
+            <h2>Manifest</h2>
+            <p>
+              No valid <code>hyrule.json</code> in this repo — the entry above is
+              built from GitHub API metadata alone.
+            </p>
+          </div>
+        )}
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .release-history { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+  .release-history > h2 {
+    font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--text-faint); margin-bottom: 20px;
+  }
+  .panel.warn { border-color: var(--warm-line); background: var(--warm-tint); }
+  .panel.warn p { margin: 0; font-size: 0.86rem; color: var(--text-muted); }
+</style>
