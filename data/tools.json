@@ -406,17 +406,67 @@
     },
     {
       "command": "kaepora",
-      "docs": null,
-      "icon": "https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png",
+      "docs": "https://iamjason.github.io/kaepora-site/",
+      "icon": "https://iamjason.github.io/kaepora-site/assets/icon.png",
       "install": null,
-      "latestRelease": null,
+      "latestRelease": {
+        "assets": [
+          {
+            "contentType": "application/zip",
+            "downloads": 0,
+            "name": "Kaepora-0.1.0.zip",
+            "size": 5958904,
+            "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip"
+          },
+          {
+            "contentType": "application/octet-stream",
+            "downloads": 0,
+            "name": "Kaepora-0.1.0.zip.sha256",
+            "size": 84,
+            "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip.sha256"
+          }
+        ],
+        "body": "Kaepora’s first public release: a small owl in your menu bar that sends links to the browser you choose.\n\n- Pick a usual browser, switch for the next link, or take a fifteen-minute detour.\n- Hold Option while opening a link to choose a browser at your cursor.\n- The menu grows to fit your browsers, up to two thirds of the screen height.\n- Optional HTML document routing and built-in update checks.\n- Routes locally without keeping browsing history.\n\nRequires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.\n\nDownload `Kaepora-0.1.0.zip`, unzip it, move **Kaepora.app** to **Applications**, and open it. Choose your usual browser and set Kaepora as the default when macOS asks.\n\nKaepora is experimental. Report issues in this repository. The application source is maintained separately.\n",
+        "bodyHtml": "<p dir=\"auto\">Kaepora’s first public release: a small owl in your menu bar that sends links to the browser you choose.</p>\n<ul dir=\"auto\">\n<li>Pick a usual browser, switch for the next link, or take a fifteen-minute detour.</li>\n<li>Hold Option while opening a link to choose a browser at your cursor.</li>\n<li>The menu grows to fit your browsers, up to two thirds of the screen height.</li>\n<li>Optional HTML document routing and built-in update checks.</li>\n<li>Routes locally without keeping browsing history.</li>\n</ul>\n<p dir=\"auto\">Requires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.</p>\n<p dir=\"auto\">Download <code class=\"notranslate\">Kaepora-0.1.0.zip</code>, unzip it, move <strong>Kaepora.app</strong> to <strong>Applications</strong>, and open it. Choose your usual browser and set Kaepora as the default when macOS asks.</p>\n<p dir=\"auto\">Kaepora is experimental. Report issues in this repository. The application source is maintained separately.</p>",
+        "html_url": "https://github.com/iamjason/kaepora-site/releases/tag/v0.1.0",
+        "name": "Kaepora 0.1.0",
+        "prerelease": false,
+        "published_at": "2026-09-10T21:45:44Z",
+        "tag": "v0.1.0"
+      },
       "manifestOk": true,
       "name": "Kaepora",
       "platforms": [
         "macos"
       ],
-      "readmeHtml": "<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png\"><img src=\"https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png\" width=\"128\" height=\"128\" alt=\"Kaepora's carved wooden owl icon\" style=\"max-width: 100%; height: auto; max-height: 128px;; aspect-ratio: 128 / 128; background-color: var(--bgColor-muted); border-radius: 6px\" class=\"js-gh-image-fallback\"></a></p>\n<p dir=\"auto\"><strong>Your browsers. One friendly switch.</strong></p>\n<p dir=\"auto\">Kaepora is a small macOS menu bar app that sends links to the browser you choose. Set Kaepora as your default browser once, then use the owl in your menu bar to decide where links open.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Choose where a link goes</h2></div>\n<ul dir=\"auto\">\n<li><strong>Always</strong> — pick your usual browser and keep using it until you change your selection.</li>\n<li><strong>Next link</strong> — send one link to a different browser, then return to your usual choice.</li>\n<li><strong>15 min</strong> — switch browsers temporarily, with a countdown in the menu.</li>\n<li><strong>Hold Option</strong> — choose a browser at your cursor. Use the arrow keys and Return, or Escape to cancel. The modifier is configurable.</li>\n</ul>\n<p dir=\"auto\">Kaepora discovers installed browsers, remembers your selection, and can also forward local HTML documents. If a browser is unavailable, it asks you to choose another. It does not keep a browsing history.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Availability</h2></div>\n<p dir=\"auto\">Kaepora is <strong>experimental</strong> and requires <strong>macOS 15 or later</strong>. A public download is not available yet. Release downloads will be published in this repository when ready.</p>\n<p dir=\"auto\">This repository contains Kaepora's public information, artwork, and Compendium manifest. The application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">The woodland family</h2></div>\n<p dir=\"auto\">Named for Kaepora Gaebora, the owl who offers guidance in <em>Ocarina of Time</em>, Kaepora joins Deku and Korok in the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Hyrule Compendium</a>.</p>\n<p dir=\"auto\">The Compendium discovers this repository through the <code>hyrule-tool</code> topic and uses <a href=\"hyrule.json\"><code>hyrule.json</code></a> for its listing. Published releases will appear in the Compendium on its next refresh.</p>",
-      "releases": [],
+      "readmeHtml": "<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png\"><img src=\"https://raw.githubusercontent.com/iamjason/kaepora-site/main/assets/icon.png\" width=\"128\" height=\"128\" alt=\"Kaepora's carved wooden owl icon\" style=\"max-width: 100%; height: auto; max-height: 128px;; aspect-ratio: 128 / 128; background-color: var(--bgColor-muted); border-radius: 6px\" class=\"js-gh-image-fallback\"></a></p>\n<p dir=\"auto\"><strong>Your browsers. One friendly switch.</strong></p>\n<p dir=\"auto\">Kaepora is a small macOS menu bar app that sends links to the browser you choose. Set Kaepora as your default browser once, then use the owl in your menu bar to decide where links open.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Choose where a link goes</h2></div>\n<ul dir=\"auto\">\n<li><strong>Always</strong> — pick your usual browser and keep using it until you change your selection.</li>\n<li><strong>Next link</strong> — send one link to a different browser, then return to your usual choice.</li>\n<li><strong>15 min</strong> — switch browsers temporarily, with a countdown in the menu.</li>\n<li><strong>Hold Option</strong> — choose a browser at your cursor. Use the arrow keys and Return, or Escape to cancel. The modifier is configurable.</li>\n</ul>\n<p dir=\"auto\">Kaepora discovers installed browsers, remembers your selection, and can also forward local HTML documents. If a browser is unavailable, it asks you to choose another. It does not keep a browsing history.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Availability</h2></div>\n<p dir=\"auto\">Kaepora is <strong>experimental</strong> and requires <strong>macOS 15 or later</strong>. Visit the <a href=\"https://iamjason.github.io/kaepora-site/\" rel=\"nofollow\">website</a> for availability and the latest download. Published builds are signed with Developer ID and notarized by Apple.</p>\n<p dir=\"auto\">This repository contains Kaepora's public information, artwork, and Compendium manifest. The application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">The woodland family</h2></div>\n<p dir=\"auto\">Named for Kaepora Gaebora, the owl who offers guidance in <em>Ocarina of Time</em>, Kaepora joins Deku and Korok in the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Hyrule Compendium</a>.</p>\n<p dir=\"auto\">The Compendium discovers this repository through the <code>hyrule-tool</code> topic and uses <a href=\"hyrule.json\"><code>hyrule.json</code></a> for its listing. Published releases will appear in the Compendium on its next refresh.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Website publishing</h2></div>\n<p dir=\"auto\">This is a static GitHub Pages site served from <code>main</code> at the repository root, matching Deku and Korok. <code>.nojekyll</code> keeps the HTML and CSS unchanged.</p>\n<p dir=\"auto\">From the separate Kaepora application checkout, <code>./kaepora update-site</code> refreshes the download block from the latest public release, and <code>./kaepora deploy</code> commits website changes, pushes them, and verifies the exact page is live. <code>./kaepora release [major|minor|patch|none]</code> builds, signs, notarizes, publishes the ZIP here, then updates and deploys the site. The updater reads this repository’s latest GitHub release.</p>",
+      "releases": [
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 0,
+              "name": "Kaepora-0.1.0.zip",
+              "size": 5958904,
+              "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 0,
+              "name": "Kaepora-0.1.0.zip.sha256",
+              "size": 84,
+              "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip.sha256"
+            }
+          ],
+          "body": "Kaepora’s first public release: a small owl in your menu bar that sends links to the browser you choose.\n\n- Pick a usual browser, switch for the next link, or take a fifteen-minute detour.\n- Hold Option while opening a link to choose a browser at your cursor.\n- The menu grows to fit your browsers, up to two thirds of the screen height.\n- Optional HTML document routing and built-in update checks.\n- Routes locally without keeping browsing history.\n\nRequires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.\n\nDownload `Kaepora-0.1.0.zip`, unzip it, move **Kaepora.app** to **Applications**, and open it. Choose your usual browser and set Kaepora as the default when macOS asks.\n\nKaepora is experimental. Report issues in this repository. The application source is maintained separately.\n",
+          "bodyHtml": "<p dir=\"auto\">Kaepora’s first public release: a small owl in your menu bar that sends links to the browser you choose.</p>\n<ul dir=\"auto\">\n<li>Pick a usual browser, switch for the next link, or take a fifteen-minute detour.</li>\n<li>Hold Option while opening a link to choose a browser at your cursor.</li>\n<li>The menu grows to fit your browsers, up to two thirds of the screen height.</li>\n<li>Optional HTML document routing and built-in update checks.</li>\n<li>Routes locally without keeping browsing history.</li>\n</ul>\n<p dir=\"auto\">Requires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.</p>\n<p dir=\"auto\">Download <code class=\"notranslate\">Kaepora-0.1.0.zip</code>, unzip it, move <strong>Kaepora.app</strong> to <strong>Applications</strong>, and open it. Choose your usual browser and set Kaepora as the default when macOS asks.</p>\n<p dir=\"auto\">Kaepora is experimental. Report issues in this repository. The application source is maintained separately.</p>",
+          "html_url": "https://github.com/iamjason/kaepora-site/releases/tag/v0.1.0",
+          "name": "Kaepora 0.1.0",
+          "prerelease": false,
+          "published_at": "2026-09-10T21:45:44Z",
+          "tag": "v0.1.0"
+        }
+      ],
       "repo": {
         "archived": false,
         "description": "Kaepora for Mac — choose where your links open. Public information and future downloads.",
@@ -431,8 +481,8 @@
       },
       "status": "experimental",
       "tagline": "Sends each link to the browser you choose from your menu bar.",
-      "updatedAt": "2026-09-10T21:07:37Z",
-      "version": null
+      "updatedAt": "2026-09-10T21:45:44Z",
+      "version": "v0.1.0"
     },
     {
       "command": "korok",
