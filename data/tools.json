@@ -3,6 +3,122 @@
   "schemaVersion": 1,
   "tools": [
     {
+      "command": "cosmo",
+      "docs": "https://iamjason.github.io/cosmo-site/",
+      "icon": "https://iamjason.github.io/cosmo-site/assets/icon.png",
+      "install": null,
+      "latestRelease": {
+        "assets": [
+          {
+            "contentType": "application/zip",
+            "downloads": 0,
+            "name": "Cosmo-0.3.1.zip",
+            "size": 1926365,
+            "url": "https://github.com/iamjason/cosmo-site/releases/download/v0.3.1/Cosmo-0.3.1.zip"
+          },
+          {
+            "contentType": "application/octet-stream",
+            "downloads": 0,
+            "name": "Cosmo-0.3.1.zip.sha256",
+            "size": 82,
+            "url": "https://github.com/iamjason/cosmo-site/releases/download/v0.3.1/Cosmo-0.3.1.zip.sha256"
+          }
+        ],
+        "body": "# Cosmo 0.3.1\n\nCosmo now remembers your scans and gives you more control over refreshing,\nprotecting, and cleaning developer data.\n\n- **156 cleanup targets across 19 categories**, including nested Swift package\n  builds, XcodeBuildMCP workspaces, simulator devices, registered XCTest clones,\n  and orphaned test folders.\n- **Saved scans and focused refresh:** reopen your last results, detect filesystem\n  changes, refresh an item, target, category, or the whole scan, and cancel work\n  while keeping completed results.\n- **Find and protect your work:** filter by project, simulator, size, activity\n  evidence, or removal consequence. Protect individual items and whole projects,\n  and review growth since the previous scan.\n- **Review every cleanup:** separate Trash moves from permanent simulator\n  removals, follow per-item progress, review cleanup history, and retry items\n  after refreshing them.\n- **Stronger cleanup checks:** revalidate selected items immediately before\n  removal, skip targets while their tools are running, and retain simulator\n  runtimes using version-aware recommendations.\n\nFiles move to Trash by default. Simulator devices and runtimes are removed\npermanently through Apple's simulator tools and are identified separately in\nthe cleanup review. Moving files to Trash does not free disk space until the\nTrash is emptied.\n\nRequires **macOS 26 or later**. Universal app for **Apple silicon and Intel**.\nDownload `Cosmo-0.3.1.zip`, move **Cosmo.app** to Applications, and open it.\nSigned with Developer ID and notarized by Apple. A SHA-256 checksum is included\nwith the download.\n",
+        "bodyHtml": "<h1 dir=\"auto\">Cosmo 0.3.1</h1>\n<p dir=\"auto\">Cosmo now remembers your scans and gives you more control over refreshing,<br>\nprotecting, and cleaning developer data.</p>\n<ul dir=\"auto\">\n<li><strong>156 cleanup targets across 19 categories</strong>, including nested Swift package<br>\nbuilds, XcodeBuildMCP workspaces, simulator devices, registered XCTest clones,<br>\nand orphaned test folders.</li>\n<li><strong>Saved scans and focused refresh:</strong> reopen your last results, detect filesystem<br>\nchanges, refresh an item, target, category, or the whole scan, and cancel work<br>\nwhile keeping completed results.</li>\n<li><strong>Find and protect your work:</strong> filter by project, simulator, size, activity<br>\nevidence, or removal consequence. Protect individual items and whole projects,<br>\nand review growth since the previous scan.</li>\n<li><strong>Review every cleanup:</strong> separate Trash moves from permanent simulator<br>\nremovals, follow per-item progress, review cleanup history, and retry items<br>\nafter refreshing them.</li>\n<li><strong>Stronger cleanup checks:</strong> revalidate selected items immediately before<br>\nremoval, skip targets while their tools are running, and retain simulator<br>\nruntimes using version-aware recommendations.</li>\n</ul>\n<p dir=\"auto\">Files move to Trash by default. Simulator devices and runtimes are removed<br>\npermanently through Apple's simulator tools and are identified separately in<br>\nthe cleanup review. Moving files to Trash does not free disk space until the<br>\nTrash is emptied.</p>\n<p dir=\"auto\">Requires <strong>macOS 26 or later</strong>. Universal app for <strong>Apple silicon and Intel</strong>.<br>\nDownload <code class=\"notranslate\">Cosmo-0.3.1.zip</code>, move <strong>Cosmo.app</strong> to Applications, and open it.<br>\nSigned with Developer ID and notarized by Apple. A SHA-256 checksum is included<br>\nwith the download.</p>",
+        "html_url": "https://github.com/iamjason/cosmo-site/releases/tag/v0.3.1",
+        "name": "Cosmo 0.3.1",
+        "prerelease": false,
+        "published_at": "2026-09-10T23:09:36Z",
+        "tag": "v0.3.1"
+      },
+      "manifestOk": true,
+      "name": "Cosmo",
+      "platforms": [
+        "macos"
+      ],
+      "readmeHtml": "<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://camo.githubusercontent.com/7402dcb8e8bef1e2887ef9c19ba23c9446bcc29d89f0b65f871ac5b45c7c6e62/68747470733a2f2f69616d6a61736f6e2e6769746875622e696f2f636f736d6f2d736974652f6173736574732f69636f6e2e706e67\"><img src=\"https://camo.githubusercontent.com/7402dcb8e8bef1e2887ef9c19ba23c9446bcc29d89f0b65f871ac5b45c7c6e62/68747470733a2f2f69616d6a61736f6e2e6769746875622e696f2f636f736d6f2d736974652f6173736574732f69636f6e2e706e67\" width=\"128\" height=\"128\" alt=\"Cosmo's space-tardigrade app icon\" data-canonical-src=\"https://iamjason.github.io/cosmo-site/assets/icon.png\" style=\"max-width: 100%; height: auto; max-height: 128px;; aspect-ratio: 128 / 128; background-color: var(--bgColor-muted); border-radius: 6px\" class=\"js-gh-image-fallback\"></a></p>\n<p dir=\"auto\"><strong>Reclaim the space your dev tools left behind.</strong></p>\n<p dir=\"auto\">Cosmo is a free native Mac app for finding developer caches, build artifacts,\nand simulator data. Review what is taking up space, understand what removal\nmeans, and choose what to clean.</p>\n<p dir=\"auto\"><a href=\"https://github.com/iamjason/cosmo-site/releases/latest\">Download the latest release</a>\n· <a href=\"https://iamjason.github.io/cosmo-site/\" rel=\"nofollow\">Website</a>\n· <a href=\"https://github.com/iamjason/cosmo-site/issues\">Report an issue</a></p>\n<p dir=\"auto\">Requires <strong>macOS 26 or later</strong>. Download the ZIP, move <strong>Cosmo.app</strong> to\nApplications, and open it. Releases are signed with Developer ID and notarized\nby Apple.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Find the space you can reclaim</h2></div>\n<ul dir=\"auto\">\n<li><strong>156 cleanup targets across 19 categories:</strong> Xcode, simulators, AI tools,\nlocal models, package managers, containers, project builds, and more.</li>\n<li><strong>Saved scan results:</strong> reopen your last scan, see filesystem changes, and\nrefresh individual targets, categories, or the whole scan.</li>\n<li><strong>Project and simulator filters:</strong> search by project, size, activity evidence,\nand removal consequence. Protect items or whole projects and review growth.</li>\n<li><strong>Cleanup review and history:</strong> check each removal method, follow per-item\nprogress, and retry failed items.</li>\n</ul>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Review before removing</h2></div>\n<p dir=\"auto\">Every target has a plain-English explanation and a safety label: <strong>Safe</strong>,\n<strong>Quit first</strong>, <strong>Rebuilds</strong>, or <strong>Destructive</strong>. Files move to Trash by default\nand can be restored until you empty it. Permanent file deletion is opt-in.\nSimulator devices and runtimes are removed permanently through Apple's\nsimulator tools; Cosmo identifies those items separately before confirmation.\nDestructive targets are never included in safe-only cleanup.</p>\n<p dir=\"auto\">Cosmo revalidates selected items, skips targets while their declared tools are\nrunning, and refuses file paths outside your home directory.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Part of the Compendium</h2></div>\n<p dir=\"auto\">Find Cosmo alongside Korok, Deku, and Kaepora in the\n<a href=\"https://iamjason.github.io/hyrule-compendium-site/tools/cosmo/\" rel=\"nofollow\">Hyrule Compendium</a>.\nThe Compendium discovers this public repository through its <code>hyrule-tool</code> topic\nand reads <a href=\"hyrule.json\">hyrule.json</a> for the listing, icon, and website.</p>\n<p dir=\"auto\">This repository hosts public information, artwork, and release downloads.\nApplication source is maintained separately.</p>",
+      "releases": [
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 0,
+              "name": "Cosmo-0.3.1.zip",
+              "size": 1926365,
+              "url": "https://github.com/iamjason/cosmo-site/releases/download/v0.3.1/Cosmo-0.3.1.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 0,
+              "name": "Cosmo-0.3.1.zip.sha256",
+              "size": 82,
+              "url": "https://github.com/iamjason/cosmo-site/releases/download/v0.3.1/Cosmo-0.3.1.zip.sha256"
+            }
+          ],
+          "body": "# Cosmo 0.3.1\n\nCosmo now remembers your scans and gives you more control over refreshing,\nprotecting, and cleaning developer data.\n\n- **156 cleanup targets across 19 categories**, including nested Swift package\n  builds, XcodeBuildMCP workspaces, simulator devices, registered XCTest clones,\n  and orphaned test folders.\n- **Saved scans and focused refresh:** reopen your last results, detect filesystem\n  changes, refresh an item, target, category, or the whole scan, and cancel work\n  while keeping completed results.\n- **Find and protect your work:** filter by project, simulator, size, activity\n  evidence, or removal consequence. Protect individual items and whole projects,\n  and review growth since the previous scan.\n- **Review every cleanup:** separate Trash moves from permanent simulator\n  removals, follow per-item progress, review cleanup history, and retry items\n  after refreshing them.\n- **Stronger cleanup checks:** revalidate selected items immediately before\n  removal, skip targets while their tools are running, and retain simulator\n  runtimes using version-aware recommendations.\n\nFiles move to Trash by default. Simulator devices and runtimes are removed\npermanently through Apple's simulator tools and are identified separately in\nthe cleanup review. Moving files to Trash does not free disk space until the\nTrash is emptied.\n\nRequires **macOS 26 or later**. Universal app for **Apple silicon and Intel**.\nDownload `Cosmo-0.3.1.zip`, move **Cosmo.app** to Applications, and open it.\nSigned with Developer ID and notarized by Apple. A SHA-256 checksum is included\nwith the download.\n",
+          "bodyHtml": "<h1 dir=\"auto\">Cosmo 0.3.1</h1>\n<p dir=\"auto\">Cosmo now remembers your scans and gives you more control over refreshing,<br>\nprotecting, and cleaning developer data.</p>\n<ul dir=\"auto\">\n<li><strong>156 cleanup targets across 19 categories</strong>, including nested Swift package<br>\nbuilds, XcodeBuildMCP workspaces, simulator devices, registered XCTest clones,<br>\nand orphaned test folders.</li>\n<li><strong>Saved scans and focused refresh:</strong> reopen your last results, detect filesystem<br>\nchanges, refresh an item, target, category, or the whole scan, and cancel work<br>\nwhile keeping completed results.</li>\n<li><strong>Find and protect your work:</strong> filter by project, simulator, size, activity<br>\nevidence, or removal consequence. Protect individual items and whole projects,<br>\nand review growth since the previous scan.</li>\n<li><strong>Review every cleanup:</strong> separate Trash moves from permanent simulator<br>\nremovals, follow per-item progress, review cleanup history, and retry items<br>\nafter refreshing them.</li>\n<li><strong>Stronger cleanup checks:</strong> revalidate selected items immediately before<br>\nremoval, skip targets while their tools are running, and retain simulator<br>\nruntimes using version-aware recommendations.</li>\n</ul>\n<p dir=\"auto\">Files move to Trash by default. Simulator devices and runtimes are removed<br>\npermanently through Apple's simulator tools and are identified separately in<br>\nthe cleanup review. Moving files to Trash does not free disk space until the<br>\nTrash is emptied.</p>\n<p dir=\"auto\">Requires <strong>macOS 26 or later</strong>. Universal app for <strong>Apple silicon and Intel</strong>.<br>\nDownload <code class=\"notranslate\">Cosmo-0.3.1.zip</code>, move <strong>Cosmo.app</strong> to Applications, and open it.<br>\nSigned with Developer ID and notarized by Apple. A SHA-256 checksum is included<br>\nwith the download.</p>",
+          "html_url": "https://github.com/iamjason/cosmo-site/releases/tag/v0.3.1",
+          "name": "Cosmo 0.3.1",
+          "prerelease": false,
+          "published_at": "2026-09-10T23:09:36Z",
+          "tag": "v0.3.1"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 4,
+              "name": "Cosmo-0.3.0.zip",
+              "size": 495368,
+              "url": "https://github.com/iamjason/cosmo-site/releases/download/v0.3.0/Cosmo-0.3.0.zip"
+            }
+          ],
+          "body": "Molt is now **Cosmo** — same app, now named after its tardigrade mascot.\n\nSigned with Developer ID and notarized by Apple — download, unzip, double-click. macOS 26+.\n\n### New in 0.3.0\n- **Smart version cleanup**: Recommended selection now keeps only the newest N versions of series like iOS Device Support, simulator runtimes, and Gradle distributions (configurable in Settings; 0 = ultra aggressive). Right-click any versioned target for Select All But Newest.\n- Renamed app, CLI (`cosmo`), and bundle id.\n\nPlus everything from 0.2.0: 152 cleanup targets across 18 categories, project artifact scanning, interactive storage map, Trash-by-default safety.",
+          "bodyHtml": "<p dir=\"auto\">Molt is now <strong>Cosmo</strong> — same app, now named after its tardigrade mascot.</p>\n<p dir=\"auto\">Signed with Developer ID and notarized by Apple — download, unzip, double-click. macOS 26+.</p>\n<h3 dir=\"auto\">New in 0.3.0</h3>\n<ul dir=\"auto\">\n<li><strong>Smart version cleanup</strong>: Recommended selection now keeps only the newest N versions of series like iOS Device Support, simulator runtimes, and Gradle distributions (configurable in Settings; 0 = ultra aggressive). Right-click any versioned target for Select All But Newest.</li>\n<li>Renamed app, CLI (<code class=\"notranslate\">cosmo</code>), and bundle id.</li>\n</ul>\n<p dir=\"auto\">Plus everything from 0.2.0: 152 cleanup targets across 18 categories, project artifact scanning, interactive storage map, Trash-by-default safety.</p>",
+          "html_url": "https://github.com/iamjason/cosmo-site/releases/tag/v0.3.0",
+          "name": "Cosmo 0.3.0",
+          "prerelease": false,
+          "published_at": "2026-06-12T03:57:54Z",
+          "tag": "v0.3.0"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Molt-0.2.0.zip",
+              "size": 477984,
+              "url": "https://github.com/iamjason/cosmo-site/releases/download/v0.2.0/Molt-0.2.0.zip"
+            }
+          ],
+          "body": "Signed with Developer ID and notarized by Apple — download, unzip, double-click. macOS 26+.\n\n152 cleanup targets across 18 categories: Xcode, simulators, AI tools, local models, package managers, containers, project artifacts, and more. Everything goes to Trash by default. No telemetry, no subscription.",
+          "bodyHtml": "<p dir=\"auto\">Signed with Developer ID and notarized by Apple — download, unzip, double-click. macOS 26+.</p>\n<p dir=\"auto\">152 cleanup targets across 18 categories: Xcode, simulators, AI tools, local models, package managers, containers, project artifacts, and more. Everything goes to Trash by default. No telemetry, no subscription.</p>",
+          "html_url": "https://github.com/iamjason/cosmo-site/releases/tag/v0.2.0",
+          "name": "Molt 0.2.0",
+          "prerelease": false,
+          "published_at": "2026-06-12T03:31:38Z",
+          "tag": "v0.2.0"
+        }
+      ],
+      "repo": {
+        "archived": false,
+        "description": "Reclaim the space your dev tools left behind.",
+        "full_name": "iamjason/cosmo-site",
+        "html_url": "https://github.com/iamjason/cosmo-site",
+        "issues_url": "https://github.com/iamjason/cosmo-site/issues",
+        "language": "Swift",
+        "stars": 0,
+        "topics": [
+          "hyrule-tool"
+        ]
+      },
+      "status": "beta",
+      "tagline": "Reclaims the space developer caches, build artifacts, and simulators leave behind on your Mac.",
+      "updatedAt": "2026-09-10T23:09:36Z",
+      "version": "v0.3.1"
+    },
+    {
       "command": "deku",
       "docs": "https://iamjason.github.io/deku-site/",
       "icon": "https://iamjason.github.io/deku-site/assets/favicon.png",
@@ -413,14 +529,14 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 3,
             "name": "Kaepora-0.1.0.zip",
             "size": 5959221,
             "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip"
           },
           {
             "contentType": "application/octet-stream",
-            "downloads": 0,
+            "downloads": 3,
             "name": "Kaepora-0.1.0.zip.sha256",
             "size": 84,
             "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip.sha256"
@@ -445,14 +561,14 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 3,
               "name": "Kaepora-0.1.0.zip",
               "size": 5959221,
               "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip"
             },
             {
               "contentType": "application/octet-stream",
-              "downloads": 0,
+              "downloads": 3,
               "name": "Kaepora-0.1.0.zip.sha256",
               "size": 84,
               "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip.sha256"
