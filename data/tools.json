@@ -11,19 +11,19 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
-            "name": "Deku-0.2.13.zip",
-            "size": 12062150,
-            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.13/Deku-0.2.13.zip"
+            "downloads": 1,
+            "name": "Deku-0.2.15.zip",
+            "size": 12061047,
+            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.15/Deku-0.2.15.zip"
           }
         ],
-        "body": "Deku 0.2.13 — signed and notarized for macOS.",
-        "bodyHtml": "<p dir=\"auto\">Deku 0.2.13 — signed and notarized for macOS.</p>",
-        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.13",
-        "name": "Deku 0.2.13",
+        "body": "Deku 0.2.15 — signed and notarized for macOS.",
+        "bodyHtml": "<p dir=\"auto\">Deku 0.2.15 — signed and notarized for macOS.</p>",
+        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.15",
+        "name": "Deku 0.2.15",
         "prerelease": false,
-        "published_at": "2026-09-09T06:22:52Z",
-        "tag": "v0.2.13"
+        "published_at": "2026-09-09T16:55:10Z",
+        "tag": "v0.2.15"
       },
       "manifestOk": true,
       "name": "Deku",
@@ -36,7 +36,43 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 1,
+              "name": "Deku-0.2.15.zip",
+              "size": 12061047,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.15/Deku-0.2.15.zip"
+            }
+          ],
+          "body": "Deku 0.2.15 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.15 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.15",
+          "name": "Deku 0.2.15",
+          "prerelease": false,
+          "published_at": "2026-09-09T16:55:10Z",
+          "tag": "v0.2.15"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.14.zip",
+              "size": 12059713,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.14/Deku-0.2.14.zip"
+            }
+          ],
+          "body": "Deku 0.2.14 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.14 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.14",
+          "name": "Deku 0.2.14",
+          "prerelease": false,
+          "published_at": "2026-09-09T16:19:54Z",
+          "tag": "v0.2.14"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
               "name": "Deku-0.2.13.zip",
               "size": 12062150,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.13/Deku-0.2.13.zip"
@@ -299,8 +335,8 @@
       },
       "status": "beta",
       "tagline": "Makes a tangled Git history readable and staging commits quick.",
-      "updatedAt": "2026-09-09T06:22:52Z",
-      "version": "v0.2.13"
+      "updatedAt": "2026-09-09T16:55:10Z",
+      "version": "v0.2.15"
     },
     {
       "command": "fnb",
@@ -341,7 +377,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 3,
+            "downloads": 4,
             "name": "Korok-0.3.3.zip",
             "size": 26853007,
             "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.3/Korok-0.3.3.zip"
@@ -366,7 +402,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 3,
+              "downloads": 4,
               "name": "Korok-0.3.3.zip",
               "size": 26853007,
               "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.3/Korok-0.3.3.zip"
