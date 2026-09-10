@@ -415,7 +415,7 @@
             "contentType": "application/zip",
             "downloads": 0,
             "name": "Kaepora-0.1.0.zip",
-            "size": 5958904,
+            "size": 5959221,
             "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip"
           },
           {
@@ -431,7 +431,7 @@
         "html_url": "https://github.com/iamjason/kaepora-site/releases/tag/v0.1.0",
         "name": "Kaepora 0.1.0",
         "prerelease": false,
-        "published_at": "2026-09-10T21:45:44Z",
+        "published_at": "2026-09-10T21:49:43Z",
         "tag": "v0.1.0"
       },
       "manifestOk": true,
@@ -447,7 +447,7 @@
               "contentType": "application/zip",
               "downloads": 0,
               "name": "Kaepora-0.1.0.zip",
-              "size": 5958904,
+              "size": 5959221,
               "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.0/Kaepora-0.1.0.zip"
             },
             {
@@ -463,7 +463,7 @@
           "html_url": "https://github.com/iamjason/kaepora-site/releases/tag/v0.1.0",
           "name": "Kaepora 0.1.0",
           "prerelease": false,
-          "published_at": "2026-09-10T21:45:44Z",
+          "published_at": "2026-09-10T21:49:43Z",
           "tag": "v0.1.0"
         }
       ],
@@ -481,7 +481,7 @@
       },
       "status": "experimental",
       "tagline": "Sends each link to the browser you choose from your menu bar.",
-      "updatedAt": "2026-09-10T21:45:44Z",
+      "updatedAt": "2026-09-10T21:49:43Z",
       "version": "v0.1.0"
     },
     {
