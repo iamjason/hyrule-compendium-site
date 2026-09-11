@@ -703,14 +703,14 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 3,
             "name": "Scrapper-0.4.0.zip",
             "size": 6095546,
             "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.4.0/Scrapper-0.4.0.zip"
           },
           {
             "contentType": "application/octet-stream",
-            "downloads": 0,
+            "downloads": 2,
             "name": "Scrapper-0.4.0.zip.sha256",
             "size": 85,
             "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.4.0/Scrapper-0.4.0.zip.sha256"
@@ -735,14 +735,14 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 3,
               "name": "Scrapper-0.4.0.zip",
               "size": 6095546,
               "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.4.0/Scrapper-0.4.0.zip"
             },
             {
               "contentType": "application/octet-stream",
-              "downloads": 0,
+              "downloads": 2,
               "name": "Scrapper-0.4.0.zip.sha256",
               "size": 85,
               "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.4.0/Scrapper-0.4.0.zip.sha256"
