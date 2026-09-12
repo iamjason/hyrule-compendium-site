@@ -11,19 +11,19 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 2,
-            "name": "Deku-0.2.18.zip",
-            "size": 12586511,
-            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.18/Deku-0.2.18.zip"
+            "downloads": 1,
+            "name": "Deku-0.2.21.zip",
+            "size": 13360754,
+            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.21/Deku-0.2.21.zip"
           }
         ],
-        "body": "Deku 0.2.18 — signed and notarized for macOS.",
-        "bodyHtml": "<p dir=\"auto\">Deku 0.2.18 — signed and notarized for macOS.</p>",
-        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.18",
-        "name": "Deku 0.2.18",
+        "body": "Deku 0.2.21 — signed and notarized for macOS.",
+        "bodyHtml": "<p dir=\"auto\">Deku 0.2.21 — signed and notarized for macOS.</p>",
+        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.21",
+        "name": "Deku 0.2.21",
         "prerelease": false,
-        "published_at": "2026-09-11T05:57:31Z",
-        "tag": "v0.2.18"
+        "published_at": "2026-09-11T22:36:00Z",
+        "tag": "v0.2.21"
       },
       "manifestOk": true,
       "name": "Deku",
@@ -32,6 +32,60 @@
       ],
       "readmeHtml": "<p dir=\"auto\">Public website and release downloads for <strong>Deku</strong>, a native macOS Git client.\nSite: <a href=\"https://iamjason.github.io/deku-site/\" rel=\"nofollow\">https://iamjason.github.io/deku-site/</a></p>\n<p dir=\"auto\">App source is private; signed and notarized builds are published under\n<a href=\"https://github.com/iamjason/deku-site/releases\">Releases</a>. The download button\nalways points at the latest release. <code>tools/release.sh</code> in the app repo builds,\nnotarizes, uploads the zip here, and bumps the version label on this page.</p>",
       "releases": [
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.21.zip",
+              "size": 13360754,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.21/Deku-0.2.21.zip"
+            }
+          ],
+          "body": "Deku 0.2.21 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.21 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.21",
+          "name": "Deku 0.2.21",
+          "prerelease": false,
+          "published_at": "2026-09-11T22:36:00Z",
+          "tag": "v0.2.21"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.20.zip",
+              "size": 13268758,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.20/Deku-0.2.20.zip"
+            }
+          ],
+          "body": "Deku 0.2.20 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.20 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.20",
+          "name": "Deku 0.2.20",
+          "prerelease": false,
+          "published_at": "2026-09-11T19:24:36Z",
+          "tag": "v0.2.20"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 3,
+              "name": "Deku-0.2.19.zip",
+              "size": 13149721,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.19/Deku-0.2.19.zip"
+            }
+          ],
+          "body": "Deku 0.2.19 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.19 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.19",
+          "name": "Deku 0.2.19",
+          "prerelease": false,
+          "published_at": "2026-09-11T16:18:42Z",
+          "tag": "v0.2.19"
+        },
         {
           "assets": [
             {
@@ -360,7 +414,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 2,
+              "downloads": 4,
               "name": "Deku-0.2.0.zip",
               "size": 7037714,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.0/Deku-0.2.0.zip"
@@ -389,8 +443,8 @@
       },
       "status": "beta",
       "tagline": "Makes a tangled Git history readable and staging commits quick.",
-      "updatedAt": "2026-09-11T05:57:31Z",
-      "version": "v0.2.18"
+      "updatedAt": "2026-09-11T22:36:00Z",
+      "version": "v0.2.21"
     },
     {
       "command": "fnb",
@@ -721,7 +775,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 6,
+            "downloads": 7,
             "name": "Scrapper-0.4.0.zip",
             "size": 6095546,
             "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.4.0/Scrapper-0.4.0.zip"
@@ -753,7 +807,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 6,
+              "downloads": 7,
               "name": "Scrapper-0.4.0.zip",
               "size": 6095546,
               "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.4.0/Scrapper-0.4.0.zip"
