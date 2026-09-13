@@ -955,6 +955,36 @@
       "version": "v1.0.0"
     },
     {
+      "command": "purah",
+      "docs": "https://iamjason.github.io/purah-site/",
+      "icon": "https://iamjason.github.io/purah-site/assets/icon.png",
+      "install": null,
+      "latestRelease": null,
+      "manifestOk": true,
+      "name": "Purah",
+      "platforms": [
+        "macos"
+      ],
+      "readmeHtml": "<p dir=\"auto\">A small native Mac editor for JSON, Markdown, and text files.</p>\n<p dir=\"auto\"><a href=\"https://iamjason.github.io/purah-site/\" rel=\"nofollow\">Website</a> · <a href=\"https://github.com/iamjason/purah-site/releases\">Releases</a> · <a href=\"https://github.com/iamjason/purah-site/issues\">Report an issue</a></p>\n<p dir=\"auto\">Open each file exactly as written, format JSON only when requested, and show an optional Markdown preview. Purah uses native document windows, file dialogs, Undo/Redo, and Find. Files stay on your Mac.</p>\n<p dir=\"auto\">Requires macOS 15 or later. Universal builds support Apple silicon and Intel. Supports UTF-8 and BOM-marked UTF-16 text files up to 2 MB.</p>\n<p dir=\"auto\">This public repository hosts the website and artwork. Future public app releases will be published here. Application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Install</h2></div>\n<p dir=\"auto\">The first public app download is being prepared. No release package is published yet.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Hyrule Compendium</h2></div>\n<p dir=\"auto\">The <code>hyrule.json</code> manifest and <code>hyrule-tool</code> repository topic register Purah with the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Compendium</a>.</p>\n<p dir=\"auto\">The site is served by GitHub Pages from <code>main:/</code>. No build step or runtime dependencies are required.</p>",
+      "releases": [],
+      "repo": {
+        "archived": false,
+        "description": "Purah for macOS — website, artwork, and releases.",
+        "full_name": "iamjason/purah-site",
+        "html_url": "https://github.com/iamjason/purah-site",
+        "issues_url": "https://github.com/iamjason/purah-site/issues",
+        "language": "Swift",
+        "stars": 0,
+        "topics": [
+          "hyrule-tool"
+        ]
+      },
+      "status": "beta",
+      "tagline": "Opens text files as written, formats JSON on request, and previews Markdown on your Mac.",
+      "updatedAt": "2026-09-13T17:49:36Z",
+      "version": null
+    },
+    {
       "command": "scrapper",
       "docs": "https://iamjason.github.io/scrapper-site/",
       "icon": "https://iamjason.github.io/scrapper-site/assets/icon.png",
