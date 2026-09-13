@@ -775,14 +775,14 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 1,
             "name": "Okarina-1.0.0.zip",
             "size": 602211,
             "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip"
           },
           {
             "contentType": "application/octet-stream",
-            "downloads": 0,
+            "downloads": 1,
             "name": "Okarina-1.0.0.zip.sha256",
             "size": 84,
             "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip.sha256"
@@ -807,14 +807,14 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 1,
               "name": "Okarina-1.0.0.zip",
               "size": 602211,
               "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip"
             },
             {
               "contentType": "application/octet-stream",
-              "downloads": 0,
+              "downloads": 1,
               "name": "Okarina-1.0.0.zip.sha256",
               "size": 84,
               "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip.sha256"
