@@ -360,7 +360,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 1,
+              "downloads": 2,
               "name": "Deku-0.2.3.zip",
               "size": 7332658,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.3/Deku-0.2.3.zip"
@@ -765,6 +765,86 @@
       "tagline": "Keeps every repo in a GitLab group cloned and synced from your menu bar.",
       "updatedAt": "2026-09-09T04:30:39Z",
       "version": "v0.3.3"
+    },
+    {
+      "command": "okarina",
+      "docs": "https://iamjason.github.io/okarina-site/",
+      "icon": "https://iamjason.github.io/okarina-site/assets/icon.png",
+      "install": null,
+      "latestRelease": {
+        "assets": [
+          {
+            "contentType": "application/zip",
+            "downloads": 0,
+            "name": "Okarina-1.0.0.zip",
+            "size": 602211,
+            "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip"
+          },
+          {
+            "contentType": "application/octet-stream",
+            "downloads": 0,
+            "name": "Okarina-1.0.0.zip.sha256",
+            "size": 84,
+            "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip.sha256"
+          }
+        ],
+        "body": "Okarina 1.0.0\n\nA guitar tuner with a live pitch gauge and alternate tunings.\n\nRequires macOS 14 or later. Universal app for Apple silicon and Intel.\n\nDownload the ZIP, move Okarina.app to Applications, then open it. Signed with Developer ID and notarized by Apple.\n",
+        "bodyHtml": "<p dir=\"auto\">Okarina 1.0.0</p>\n<p dir=\"auto\">A guitar tuner with a live pitch gauge and alternate tunings.</p>\n<p dir=\"auto\">Requires macOS 14 or later. Universal app for Apple silicon and Intel.</p>\n<p dir=\"auto\">Download the ZIP, move Okarina.app to Applications, then open it. Signed with Developer ID and notarized by Apple.</p>",
+        "html_url": "https://github.com/iamjason/okarina-site/releases/tag/v1.0.0",
+        "name": "Okarina 1.0.0",
+        "prerelease": false,
+        "published_at": "2026-09-13T05:24:21Z",
+        "tag": "v1.0.0"
+      },
+      "manifestOk": true,
+      "name": "Okarina",
+      "platforms": [
+        "macos"
+      ],
+      "readmeHtml": "<p dir=\"auto\">A native guitar tuner with live pitch feedback, a clear cents gauge, and five guitar tunings.</p>\n<p dir=\"auto\">This public repository contains the website and Mac release downloads. Application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Download for Mac</h2></div>\n<p dir=\"auto\">Get the ZIP from <a href=\"https://github.com/iamjason/okarina-site/releases/latest\">the latest release</a>, unzip it, and move <strong>Okarina.app</strong> into Applications. Requires <strong>macOS 14 or later</strong>; supports Apple silicon and Intel Macs.</p>\n<p dir=\"auto\">Published Mac builds are signed with Developer ID and notarized by Apple. Each release includes a SHA-256 checksum. Okarina is experimental and is still undergoing device testing.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Tune your guitar</h2></div>\n<p dir=\"auto\">Open Okarina, click <strong>Start tuning</strong>, and allow microphone access. Pluck one open string and mute the others. The pointer shows whether the note is flat or sharp; the center turns green within ±5 cents of the target.</p>\n<ul dir=\"auto\">\n<li>Automatic detection or manual string selection.</li>\n<li>Standard, Drop D, Half step down, Open G, and DADGAD.</li>\n<li>Concert pitch from A₄ = 430–450 Hz, saved on your device.</li>\n<li>Audio is analyzed locally and is never recorded or uploaded.</li>\n</ul>\n<p dir=\"auto\">iPhone and Apple Watch versions are in development; this repository distributes the Mac app.</p>\n<p dir=\"auto\"><a href=\"https://iamjason.github.io/okarina-site/\" rel=\"nofollow\">Website</a> · <a href=\"https://github.com/iamjason/okarina-site/releases\">Release history</a> · <a href=\"https://iamjason.github.io/hyrule-compendium-site/tools/okarina/\" rel=\"nofollow\">Hyrule Compendium</a></p>",
+      "releases": [
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 0,
+              "name": "Okarina-1.0.0.zip",
+              "size": 602211,
+              "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 0,
+              "name": "Okarina-1.0.0.zip.sha256",
+              "size": 84,
+              "url": "https://github.com/iamjason/okarina-site/releases/download/v1.0.0/Okarina-1.0.0.zip.sha256"
+            }
+          ],
+          "body": "Okarina 1.0.0\n\nA guitar tuner with a live pitch gauge and alternate tunings.\n\nRequires macOS 14 or later. Universal app for Apple silicon and Intel.\n\nDownload the ZIP, move Okarina.app to Applications, then open it. Signed with Developer ID and notarized by Apple.\n",
+          "bodyHtml": "<p dir=\"auto\">Okarina 1.0.0</p>\n<p dir=\"auto\">A guitar tuner with a live pitch gauge and alternate tunings.</p>\n<p dir=\"auto\">Requires macOS 14 or later. Universal app for Apple silicon and Intel.</p>\n<p dir=\"auto\">Download the ZIP, move Okarina.app to Applications, then open it. Signed with Developer ID and notarized by Apple.</p>",
+          "html_url": "https://github.com/iamjason/okarina-site/releases/tag/v1.0.0",
+          "name": "Okarina 1.0.0",
+          "prerelease": false,
+          "published_at": "2026-09-13T05:24:21Z",
+          "tag": "v1.0.0"
+        }
+      ],
+      "repo": {
+        "archived": false,
+        "description": "Okarina guitar tuner for Mac — downloads, releases, and the Hyrule Compendium listing",
+        "full_name": "iamjason/okarina-site",
+        "html_url": "https://github.com/iamjason/okarina-site",
+        "issues_url": "https://github.com/iamjason/okarina-site/issues",
+        "language": "Swift",
+        "stars": 0,
+        "topics": [
+          "hyrule-tool"
+        ]
+      },
+      "status": "experimental",
+      "tagline": "Tunes your guitar with live pitch feedback, alternate tunings, and a clear cents gauge.",
+      "updatedAt": "2026-09-13T05:24:21Z",
+      "version": "v1.0.0"
     },
     {
       "command": "scrapper",
