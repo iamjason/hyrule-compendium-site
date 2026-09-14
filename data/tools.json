@@ -626,7 +626,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 3,
+              "downloads": 4,
               "name": "Korok-0.3.1.zip",
               "size": 22818796,
               "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.1/Korok-0.3.1.zip"
@@ -887,7 +887,7 @@
           },
           {
             "contentType": "application/octet-stream",
-            "downloads": 0,
+            "downloads": 1,
             "name": "Partitura-1.1.0-arm64.zip.sha256",
             "size": 92,
             "url": "https://github.com/iamjason/partitura-site/releases/download/v1.1.0/Partitura-1.1.0-arm64.zip.sha256"
@@ -919,7 +919,7 @@
             },
             {
               "contentType": "application/octet-stream",
-              "downloads": 0,
+              "downloads": 1,
               "name": "Partitura-1.1.0-arm64.zip.sha256",
               "size": 92,
               "url": "https://github.com/iamjason/partitura-site/releases/download/v1.1.0/Partitura-1.1.0-arm64.zip.sha256"
@@ -988,14 +988,14 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 2,
             "name": "Purah-0.1.0.zip",
             "size": 2854181,
             "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.0/Purah-0.1.0.zip"
           },
           {
             "contentType": "application/octet-stream",
-            "downloads": 0,
+            "downloads": 1,
             "name": "Purah-0.1.0.zip.sha256",
             "size": 82,
             "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.0/Purah-0.1.0.zip.sha256"
@@ -1020,14 +1020,14 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 2,
               "name": "Purah-0.1.0.zip",
               "size": 2854181,
               "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.0/Purah-0.1.0.zip"
             },
             {
               "contentType": "application/octet-stream",
-              "downloads": 0,
+              "downloads": 1,
               "name": "Purah-0.1.0.zip.sha256",
               "size": 82,
               "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.0/Purah-0.1.0.zip.sha256"
