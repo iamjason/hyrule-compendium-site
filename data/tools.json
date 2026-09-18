@@ -11,19 +11,19 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 3,
-            "name": "Deku-0.2.32.zip",
-            "size": 14436423,
-            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.32/Deku-0.2.32.zip"
+            "downloads": 2,
+            "name": "Deku-0.2.38.zip",
+            "size": 15837341,
+            "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.38/Deku-0.2.38.zip"
           }
         ],
-        "body": "Deku 0.2.32 — signed and notarized for macOS.",
-        "bodyHtml": "<p dir=\"auto\">Deku 0.2.32 — signed and notarized for macOS.</p>",
-        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.32",
-        "name": "Deku 0.2.32",
+        "body": "Deku 0.2.38 — signed and notarized for macOS.",
+        "bodyHtml": "<p dir=\"auto\">Deku 0.2.38 — signed and notarized for macOS.</p>",
+        "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.38",
+        "name": "Deku 0.2.38",
         "prerelease": false,
-        "published_at": "2026-09-15T04:07:18Z",
-        "tag": "v0.2.32"
+        "published_at": "2026-09-17T23:29:51Z",
+        "tag": "v0.2.38"
       },
       "manifestOk": true,
       "name": "Deku",
@@ -32,6 +32,60 @@
       ],
       "readmeHtml": "<p dir=\"auto\">Public website and release downloads for <strong>Deku</strong>, a native macOS Git client.\nSite: <a href=\"https://iamjason.github.io/deku-site/\" rel=\"nofollow\">https://iamjason.github.io/deku-site/</a></p>\n<p dir=\"auto\">App source is private; signed and notarized builds are published under\n<a href=\"https://github.com/iamjason/deku-site/releases\">Releases</a>. The download button\nalways points at the latest release. <code>tools/release.sh</code> in the app repo builds,\nnotarizes, uploads the zip here, and bumps the version label on this page.</p>",
       "releases": [
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Deku-0.2.38.zip",
+              "size": 15837341,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.38/Deku-0.2.38.zip"
+            }
+          ],
+          "body": "Deku 0.2.38 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.38 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.38",
+          "name": "Deku 0.2.38",
+          "prerelease": false,
+          "published_at": "2026-09-17T23:29:51Z",
+          "tag": "v0.2.38"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Deku-0.2.34.zip",
+              "size": 14688045,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.34/Deku-0.2.34.zip"
+            }
+          ],
+          "body": "Deku 0.2.34 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.34 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.34",
+          "name": "Deku 0.2.34",
+          "prerelease": false,
+          "published_at": "2026-09-17T19:07:51Z",
+          "tag": "v0.2.34"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 4,
+              "name": "Deku-0.2.33.zip",
+              "size": 14679614,
+              "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.33/Deku-0.2.33.zip"
+            }
+          ],
+          "body": "Deku 0.2.33 — signed and notarized for macOS.",
+          "bodyHtml": "<p dir=\"auto\">Deku 0.2.33 — signed and notarized for macOS.</p>",
+          "html_url": "https://github.com/iamjason/deku-site/releases/tag/v0.2.33",
+          "name": "Deku 0.2.33",
+          "prerelease": false,
+          "published_at": "2026-09-17T16:13:44Z",
+          "tag": "v0.2.33"
+        },
         {
           "assets": [
             {
@@ -623,8 +677,8 @@
       },
       "status": "beta",
       "tagline": "Makes a tangled Git history readable and staging commits quick.",
-      "updatedAt": "2026-09-15T04:07:18Z",
-      "version": "v0.2.32"
+      "updatedAt": "2026-09-17T23:29:51Z",
+      "version": "v0.2.38"
     },
     {
       "command": "fnb",
