@@ -51,6 +51,15 @@ const full = title === 'Compendium' ? title : `${title} · Compendium`;
         }
       })();
     </script>
+
+    {/* Anonymous usage statistics: page views, download and copy clicks. No cookies. */}
+    <script
+      is:inline
+      defer
+      src="https://gossip-stone.iamjason.workers.dev/gs.js"
+      data-app="compendium"
+      data-base={import.meta.env.BASE_URL.replace(/\/$/, '')}
+    ></script>
   </head>
 
   <body>

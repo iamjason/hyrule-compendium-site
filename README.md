@@ -208,3 +208,7 @@ examples/                 a reference hyrule.json
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for naming conventions.
+
+## Usage statistics
+
+This site records anonymous usage statistics: page views, download clicks and a daily visitor count derived from a hash of your IP address and browser. No cookies, no personal data, nothing stored in your browser. The collector is [Gossip Stone](https://github.com/iamjason/gossip-stone-swift#what-is-sent).
