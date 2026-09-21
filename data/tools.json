@@ -11,7 +11,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 3,
+            "downloads": 4,
             "name": "Deku-0.2.39.zip",
             "size": 15847747,
             "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.39/Deku-0.2.39.zip"
@@ -36,7 +36,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 3,
+              "downloads": 4,
               "name": "Deku-0.2.39.zip",
               "size": 15847747,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.39/Deku-0.2.39.zip"
@@ -878,7 +878,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 3,
+            "downloads": 4,
             "name": "Korok-0.3.4.zip",
             "size": 26883472,
             "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.4/Korok-0.3.4.zip"
@@ -903,7 +903,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 3,
+              "downloads": 4,
               "name": "Korok-0.3.4.zip",
               "size": 26883472,
               "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.4/Korok-0.3.4.zip"
