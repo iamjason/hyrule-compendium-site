@@ -773,7 +773,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 1,
+            "downloads": 2,
             "name": "Kaepora-0.1.1.zip",
             "size": 6945956,
             "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.1/Kaepora-0.1.1.zip"
@@ -805,7 +805,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 1,
+              "downloads": 2,
               "name": "Kaepora-0.1.1.zip",
               "size": 6945956,
               "url": "https://github.com/iamjason/kaepora-site/releases/download/v0.1.1/Kaepora-0.1.1.zip"
@@ -1369,7 +1369,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 1,
             "name": "Purah-0.1.1.zip",
             "size": 3150978,
             "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip"
@@ -1401,7 +1401,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 1,
               "name": "Purah-0.1.1.zip",
               "size": 3150978,
               "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip"
