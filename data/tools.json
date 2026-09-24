@@ -878,7 +878,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 4,
+            "downloads": 5,
             "name": "Korok-0.3.4.zip",
             "size": 26883472,
             "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.4/Korok-0.3.4.zip"
@@ -903,7 +903,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 4,
+              "downloads": 5,
               "name": "Korok-0.3.4.zip",
               "size": 26883472,
               "url": "https://github.com/iamjason/korok-site/releases/download/v0.3.4/Korok-0.3.4.zip"
@@ -1535,7 +1535,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 2,
             "name": "Sic-0.3.0.zip",
             "size": 3281938,
             "url": "https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip"
@@ -1567,7 +1567,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 2,
               "name": "Sic-0.3.0.zip",
               "size": 3281938,
               "url": "https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip"
@@ -1592,7 +1592,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 1,
+              "downloads": 2,
               "name": "Sic-0.2.0.zip",
               "size": 3150361,
               "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip"
