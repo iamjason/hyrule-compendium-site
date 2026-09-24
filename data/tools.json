@@ -1361,111 +1361,6 @@
       "version": "v1.1.1"
     },
     {
-      "command": "purah",
-      "docs": "https://iamjason.github.io/purah-site/",
-      "icon": "https://iamjason.github.io/purah-site/assets/icon.png",
-      "install": null,
-      "latestRelease": {
-        "assets": [
-          {
-            "contentType": "application/zip",
-            "downloads": 1,
-            "name": "Purah-0.1.1.zip",
-            "size": 3150978,
-            "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip"
-          },
-          {
-            "contentType": "application/octet-stream",
-            "downloads": 0,
-            "name": "Purah-0.1.1.zip.sha256",
-            "size": 82,
-            "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip.sha256"
-          }
-        ],
-        "body": "Purah 0.1.1 — adds anonymous usage statistics (one launch event per start, no personal data). Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
-        "bodyHtml": "<p dir=\"auto\">Purah 0.1.1 — adds anonymous usage statistics (one launch event per start, no personal data). Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
-        "html_url": "https://github.com/iamjason/purah-site/releases/tag/v0.1.1",
-        "name": "Purah 0.1.1",
-        "prerelease": false,
-        "published_at": "2026-09-18T19:42:38Z",
-        "tag": "v0.1.1"
-      },
-      "manifestOk": true,
-      "name": "Purah",
-      "platforms": [
-        "macos"
-      ],
-      "readmeHtml": "<p dir=\"auto\">A small native Mac editor for JSON, Markdown, and text files.</p>\n<p dir=\"auto\"><a href=\"https://iamjason.github.io/purah-site/\" rel=\"nofollow\">Website</a> · <a href=\"https://github.com/iamjason/purah-site/releases\">Releases</a> · <a href=\"https://github.com/iamjason/purah-site/issues\">Report an issue</a></p>\n<p dir=\"auto\">Open each file exactly as written, format JSON only when requested, and show an optional Markdown preview. Purah uses native document windows, file dialogs, Undo/Redo, and Find. Files stay on your Mac.</p>\n<p dir=\"auto\">Requires macOS 15 or later. Universal builds support Apple silicon and Intel. Supports UTF-8 and BOM-marked UTF-16 text files up to 2 MB.</p>\n<p dir=\"auto\">This public repository hosts the website, artwork, and signed, notarized releases. Application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Install</h2></div>\n<p dir=\"auto\">Download <a href=\"https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip\">Purah 0.1.1</a>, unzip it, and drag Purah.app to Applications. A <a href=\"https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip.sha256\">SHA-256 checksum</a> accompanies the release.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Hyrule Compendium</h2></div>\n<p dir=\"auto\">The <code>hyrule.json</code> manifest and <code>hyrule-tool</code> repository topic register Purah with the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Compendium</a>.</p>\n<p dir=\"auto\">The site is served by GitHub Pages from <code>main:/</code>. No build step or runtime dependencies are required.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Usage statistics</h2></div>\n<p dir=\"auto\">This site records anonymous usage statistics: page views, download clicks and a daily visitor count derived from a hash of your IP address and browser. No cookies, no personal data, nothing stored in your browser. The collector is <a href=\"https://github.com/iamjason/gossip-stone-swift#what-is-sent\">Gossip Stone</a>.</p>",
-      "releases": [
-        {
-          "assets": [
-            {
-              "contentType": "application/zip",
-              "downloads": 1,
-              "name": "Purah-0.1.1.zip",
-              "size": 3150978,
-              "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip"
-            },
-            {
-              "contentType": "application/octet-stream",
-              "downloads": 0,
-              "name": "Purah-0.1.1.zip.sha256",
-              "size": 82,
-              "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.1/Purah-0.1.1.zip.sha256"
-            }
-          ],
-          "body": "Purah 0.1.1 — adds anonymous usage statistics (one launch event per start, no personal data). Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
-          "bodyHtml": "<p dir=\"auto\">Purah 0.1.1 — adds anonymous usage statistics (one launch event per start, no personal data). Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
-          "html_url": "https://github.com/iamjason/purah-site/releases/tag/v0.1.1",
-          "name": "Purah 0.1.1",
-          "prerelease": false,
-          "published_at": "2026-09-18T19:42:38Z",
-          "tag": "v0.1.1"
-        },
-        {
-          "assets": [
-            {
-              "contentType": "application/zip",
-              "downloads": 2,
-              "name": "Purah-0.1.0.zip",
-              "size": 2854181,
-              "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.0/Purah-0.1.0.zip"
-            },
-            {
-              "contentType": "application/octet-stream",
-              "downloads": 1,
-              "name": "Purah-0.1.0.zip.sha256",
-              "size": 82,
-              "url": "https://github.com/iamjason/purah-site/releases/download/v0.1.0/Purah-0.1.0.zip.sha256"
-            }
-          ],
-          "body": "Purah's first release: a native Mac editor for JSON, Markdown, and text.\n\n- Open files exactly as written, with no automatic reformatting.\n- Format or minify JSON on request, preserving numbers, duplicate keys, key order, and string escapes. Undo restores the original text.\n- Show an optional Markdown preview alongside the source.\n- Use native document windows, Open and Save, Find, Undo and Redo, line numbers, and line wrapping.\n- All text processing stays on your Mac.\n\nRequires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.\n\nDownload `Purah-0.1.0.zip`, unzip it, and drag `Purah.app` to Applications. The accompanying `.sha256` file verifies the download.\n\nSupports UTF-8 and BOM-marked UTF-16 files up to 2 MB. JSON formatting supports up to 200,000 UTF-16 units; Markdown previews support up to 200,000 UTF-8 bytes. Preview limits leave the source unchanged.\n",
-          "bodyHtml": "<p dir=\"auto\">Purah's first release: a native Mac editor for JSON, Markdown, and text.</p>\n<ul dir=\"auto\">\n<li>Open files exactly as written, with no automatic reformatting.</li>\n<li>Format or minify JSON on request, preserving numbers, duplicate keys, key order, and string escapes. Undo restores the original text.</li>\n<li>Show an optional Markdown preview alongside the source.</li>\n<li>Use native document windows, Open and Save, Find, Undo and Redo, line numbers, and line wrapping.</li>\n<li>All text processing stays on your Mac.</li>\n</ul>\n<p dir=\"auto\">Requires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.</p>\n<p dir=\"auto\">Download <code class=\"notranslate\">Purah-0.1.0.zip</code>, unzip it, and drag <code class=\"notranslate\">Purah.app</code> to Applications. The accompanying <code class=\"notranslate\">.sha256</code> file verifies the download.</p>\n<p dir=\"auto\">Supports UTF-8 and BOM-marked UTF-16 files up to 2 MB. JSON formatting supports up to 200,000 UTF-16 units; Markdown previews support up to 200,000 UTF-8 bytes. Preview limits leave the source unchanged.</p>",
-          "html_url": "https://github.com/iamjason/purah-site/releases/tag/v0.1.0",
-          "name": "Purah 0.1.0",
-          "prerelease": false,
-          "published_at": "2026-09-13T18:28:46Z",
-          "tag": "v0.1.0"
-        }
-      ],
-      "repo": {
-        "archived": false,
-        "description": "Purah for macOS — website, artwork, and releases.",
-        "full_name": "iamjason/purah-site",
-        "html_url": "https://github.com/iamjason/purah-site",
-        "issues_url": "https://github.com/iamjason/purah-site/issues",
-        "language": "Swift",
-        "stars": 0,
-        "topics": [
-          "hyrule-tool"
-        ]
-      },
-      "status": "beta",
-      "tagline": "Opens text files as written, formats JSON on request, and previews Markdown on your Mac.",
-      "updatedAt": "2026-09-18T19:42:38Z",
-      "version": "v0.1.1"
-    },
-    {
       "command": "scrapper",
       "docs": "https://iamjason.github.io/scrapper-site/",
       "icon": "https://iamjason.github.io/scrapper-site/assets/icon.png",
@@ -1630,6 +1525,136 @@
       "tagline": "Reclaims the space developer caches, build artifacts, and simulators leave behind on your Mac.",
       "updatedAt": "2026-09-18T19:44:49Z",
       "version": "v0.4.1"
+    },
+    {
+      "command": "sic",
+      "docs": "https://iamjason.github.io/sic-site/",
+      "icon": "https://iamjason.github.io/sic-site/assets/icon.png",
+      "install": null,
+      "latestRelease": {
+        "assets": [
+          {
+            "contentType": "application/zip",
+            "downloads": 0,
+            "name": "Sic-0.2.0.zip",
+            "size": 3150361,
+            "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip"
+          },
+          {
+            "contentType": "application/octet-stream",
+            "downloads": 0,
+            "name": "Sic-0.2.0.zip.sha256",
+            "size": 80,
+            "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip.sha256"
+          }
+        ],
+        "body": "Sic 0.2.0 — Purah is now Sic, named for the Latin marker for text quoted exactly as written. New bundle identifier com.iamjason.Sic, so this installs as a new app beside any Purah copy; preferences and recent files start fresh. No other functional changes. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
+        "bodyHtml": "<p dir=\"auto\">Sic 0.2.0 — Purah is now Sic, named for the Latin marker for text quoted exactly as written. New bundle identifier com.iamjason.Sic, so this installs as a new app beside any Purah copy; preferences and recent files start fresh. No other functional changes. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
+        "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.2.0",
+        "name": "Sic 0.2.0",
+        "prerelease": false,
+        "published_at": "2026-09-24T03:10:33Z",
+        "tag": "v0.2.0"
+      },
+      "manifestOk": true,
+      "name": "Sic",
+      "platforms": [
+        "macos"
+      ],
+      "readmeHtml": "<p dir=\"auto\">A small native Mac editor for JSON, Markdown, and text files. Named for <em>sic</em>: your files, exactly as written.</p>\n<p dir=\"auto\"><a href=\"https://iamjason.github.io/sic-site/\" rel=\"nofollow\">Website</a> · <a href=\"https://github.com/iamjason/sic-site/releases\">Releases</a> · <a href=\"https://github.com/iamjason/sic-site/issues\">Report an issue</a></p>\n<p dir=\"auto\">Open each file exactly as written, format JSON only when requested, and show an optional Markdown preview. Sic uses native document windows, file dialogs, Undo/Redo, and Find. Files stay on your Mac.</p>\n<p dir=\"auto\">Requires macOS 15 or later. Universal builds support Apple silicon and Intel. Supports UTF-8 and BOM-marked UTF-16 text files up to 2 MB.</p>\n<p dir=\"auto\">This public repository hosts the website, artwork, and signed, notarized releases. Application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Install</h2></div>\n<p dir=\"auto\">Download <a href=\"https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip\">Sic 0.2.0</a>, unzip it, and drag Sic.app to Applications. A <a href=\"https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip.sha256\">SHA-256 checksum</a> accompanies the release.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Hyrule Compendium</h2></div>\n<p dir=\"auto\">The <code>hyrule.json</code> manifest and <code>hyrule-tool</code> repository topic register Sic with the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Compendium</a>.</p>\n<p dir=\"auto\">The site is served by GitHub Pages from <code>main:/</code>. No build step or runtime dependencies are required.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Usage statistics</h2></div>\n<p dir=\"auto\">This site records anonymous usage statistics: page views, download clicks and a daily visitor count derived from a hash of your IP address and browser. No cookies, no personal data, nothing stored in your browser. The collector is <a href=\"https://github.com/iamjason/gossip-stone-swift#what-is-sent\">Gossip Stone</a>.</p>",
+      "releases": [
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 0,
+              "name": "Sic-0.2.0.zip",
+              "size": 3150361,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 0,
+              "name": "Sic-0.2.0.zip.sha256",
+              "size": 80,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip.sha256"
+            }
+          ],
+          "body": "Sic 0.2.0 — Purah is now Sic, named for the Latin marker for text quoted exactly as written. New bundle identifier com.iamjason.Sic, so this installs as a new app beside any Purah copy; preferences and recent files start fresh. No other functional changes. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
+          "bodyHtml": "<p dir=\"auto\">Sic 0.2.0 — Purah is now Sic, named for the Latin marker for text quoted exactly as written. New bundle identifier com.iamjason.Sic, so this installs as a new app beside any Purah copy; preferences and recent files start fresh. No other functional changes. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
+          "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.2.0",
+          "name": "Sic 0.2.0",
+          "prerelease": false,
+          "published_at": "2026-09-24T03:10:33Z",
+          "tag": "v0.2.0"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
+              "name": "Purah-0.1.1.zip",
+              "size": 3150978,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.1.1/Purah-0.1.1.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 0,
+              "name": "Purah-0.1.1.zip.sha256",
+              "size": 82,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.1.1/Purah-0.1.1.zip.sha256"
+            }
+          ],
+          "body": "Purah 0.1.1 — adds anonymous usage statistics (one launch event per start, no personal data). Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
+          "bodyHtml": "<p dir=\"auto\">Purah 0.1.1 — adds anonymous usage statistics (one launch event per start, no personal data). Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
+          "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.1.1",
+          "name": "Purah 0.1.1",
+          "prerelease": false,
+          "published_at": "2026-09-18T19:42:38Z",
+          "tag": "v0.1.1"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 2,
+              "name": "Purah-0.1.0.zip",
+              "size": 2854181,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.1.0/Purah-0.1.0.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 1,
+              "name": "Purah-0.1.0.zip.sha256",
+              "size": 82,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.1.0/Purah-0.1.0.zip.sha256"
+            }
+          ],
+          "body": "Purah's first release: a native Mac editor for JSON, Markdown, and text.\n\n- Open files exactly as written, with no automatic reformatting.\n- Format or minify JSON on request, preserving numbers, duplicate keys, key order, and string escapes. Undo restores the original text.\n- Show an optional Markdown preview alongside the source.\n- Use native document windows, Open and Save, Find, Undo and Redo, line numbers, and line wrapping.\n- All text processing stays on your Mac.\n\nRequires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.\n\nDownload `Purah-0.1.0.zip`, unzip it, and drag `Purah.app` to Applications. The accompanying `.sha256` file verifies the download.\n\nSupports UTF-8 and BOM-marked UTF-16 files up to 2 MB. JSON formatting supports up to 200,000 UTF-16 units; Markdown previews support up to 200,000 UTF-8 bytes. Preview limits leave the source unchanged.\n",
+          "bodyHtml": "<p dir=\"auto\">Purah's first release: a native Mac editor for JSON, Markdown, and text.</p>\n<ul dir=\"auto\">\n<li>Open files exactly as written, with no automatic reformatting.</li>\n<li>Format or minify JSON on request, preserving numbers, duplicate keys, key order, and string escapes. Undo restores the original text.</li>\n<li>Show an optional Markdown preview alongside the source.</li>\n<li>Use native document windows, Open and Save, Find, Undo and Redo, line numbers, and line wrapping.</li>\n<li>All text processing stays on your Mac.</li>\n</ul>\n<p dir=\"auto\">Requires macOS 15 or later. Universal app for Apple silicon and Intel, signed with Developer ID and notarized by Apple.</p>\n<p dir=\"auto\">Download <code class=\"notranslate\">Purah-0.1.0.zip</code>, unzip it, and drag <code class=\"notranslate\">Purah.app</code> to Applications. The accompanying <code class=\"notranslate\">.sha256</code> file verifies the download.</p>\n<p dir=\"auto\">Supports UTF-8 and BOM-marked UTF-16 files up to 2 MB. JSON formatting supports up to 200,000 UTF-16 units; Markdown previews support up to 200,000 UTF-8 bytes. Preview limits leave the source unchanged.</p>",
+          "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.1.0",
+          "name": "Purah 0.1.0",
+          "prerelease": false,
+          "published_at": "2026-09-13T18:28:46Z",
+          "tag": "v0.1.0"
+        }
+      ],
+      "repo": {
+        "archived": false,
+        "description": "Purah for macOS — website, artwork, and releases.",
+        "full_name": "iamjason/sic-site",
+        "html_url": "https://github.com/iamjason/sic-site",
+        "issues_url": "https://github.com/iamjason/sic-site/issues",
+        "language": "Swift",
+        "stars": 0,
+        "topics": [
+          "hyrule-tool"
+        ]
+      },
+      "status": "beta",
+      "tagline": "Opens text files as written, formats JSON on request, and previews Markdown on your Mac.",
+      "updatedAt": "2026-09-24T03:10:33Z",
+      "version": "v0.2.0"
     }
   ],
   "topic": "hyrule-tool"
