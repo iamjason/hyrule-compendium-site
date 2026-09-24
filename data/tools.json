@@ -1536,38 +1536,63 @@
           {
             "contentType": "application/zip",
             "downloads": 0,
-            "name": "Sic-0.2.0.zip",
-            "size": 3150361,
-            "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip"
+            "name": "Sic-0.3.0.zip",
+            "size": 3281938,
+            "url": "https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip"
           },
           {
             "contentType": "application/octet-stream",
             "downloads": 0,
-            "name": "Sic-0.2.0.zip.sha256",
+            "name": "Sic-0.3.0.zip.sha256",
             "size": 80,
-            "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip.sha256"
+            "url": "https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip.sha256"
           }
         ],
-        "body": "Sic 0.2.0 — Purah is now Sic, named for the Latin marker for text quoted exactly as written. New bundle identifier com.iamjason.Sic, so this installs as a new app beside any Purah copy; preferences and recent files start fresh. No other functional changes. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
-        "bodyHtml": "<p dir=\"auto\">Sic 0.2.0 — Purah is now Sic, named for the Latin marker for text quoted exactly as written. New bundle identifier com.iamjason.Sic, so this installs as a new app beside any Purah copy; preferences and recent files start fresh. No other functional changes. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
-        "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.2.0",
-        "name": "Sic 0.2.0",
+        "body": "Sic 0.3.0 — the Markdown preview is now editable: type, delete, paste, and use Bold/Italic/Code/Link/Heading/List/Quote on the rendered page, and selections highlight the matching Markdown in the source. Return continues lists and quotes; clicking a task box toggles it. Adds in-app updates: Sic checks the release feed once a day and Sic > Check for Updates… checks now. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
+        "bodyHtml": "<p dir=\"auto\">Sic 0.3.0 — the Markdown preview is now editable: type, delete, paste, and use Bold/Italic/Code/Link/Heading/List/Quote on the rendered page, and selections highlight the matching Markdown in the source. Return continues lists and quotes; clicking a task box toggles it. Adds in-app updates: Sic checks the release feed once a day and Sic &gt; Check for Updates… checks now. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
+        "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.3.0",
+        "name": "Sic 0.3.0",
         "prerelease": false,
-        "published_at": "2026-09-24T03:10:33Z",
-        "tag": "v0.2.0"
+        "published_at": "2026-09-24T04:15:23Z",
+        "tag": "v0.3.0"
       },
       "manifestOk": true,
       "name": "Sic",
       "platforms": [
         "macos"
       ],
-      "readmeHtml": "<p dir=\"auto\">A small native Mac editor for JSON, Markdown, and text files. Named for <em>sic</em>: your files, exactly as written.</p>\n<p dir=\"auto\"><a href=\"https://iamjason.github.io/sic-site/\" rel=\"nofollow\">Website</a> · <a href=\"https://github.com/iamjason/sic-site/releases\">Releases</a> · <a href=\"https://github.com/iamjason/sic-site/issues\">Report an issue</a></p>\n<p dir=\"auto\">Open each file exactly as written, format JSON only when requested, and show an optional Markdown preview. Sic uses native document windows, file dialogs, Undo/Redo, and Find. Files stay on your Mac.</p>\n<p dir=\"auto\">Requires macOS 15 or later. Universal builds support Apple silicon and Intel. Supports UTF-8 and BOM-marked UTF-16 text files up to 2 MB.</p>\n<p dir=\"auto\">This public repository hosts the website, artwork, and signed, notarized releases. Application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Install</h2></div>\n<p dir=\"auto\">Download <a href=\"https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip\">Sic 0.2.0</a>, unzip it, and drag Sic.app to Applications. A <a href=\"https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip.sha256\">SHA-256 checksum</a> accompanies the release.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Hyrule Compendium</h2></div>\n<p dir=\"auto\">The <code>hyrule.json</code> manifest and <code>hyrule-tool</code> repository topic register Sic with the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Compendium</a>.</p>\n<p dir=\"auto\">The site is served by GitHub Pages from <code>main:/</code>. No build step or runtime dependencies are required.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Usage statistics</h2></div>\n<p dir=\"auto\">This site records anonymous usage statistics: page views, download clicks and a daily visitor count derived from a hash of your IP address and browser. No cookies, no personal data, nothing stored in your browser. The collector is <a href=\"https://github.com/iamjason/gossip-stone-swift#what-is-sent\">Gossip Stone</a>.</p>",
+      "readmeHtml": "<p dir=\"auto\">A small native Mac editor for JSON, Markdown, and text files. Named for <em>sic</em>: your files, exactly as written.</p>\n<p dir=\"auto\"><a href=\"https://iamjason.github.io/sic-site/\" rel=\"nofollow\">Website</a> · <a href=\"https://github.com/iamjason/sic-site/releases\">Releases</a> · <a href=\"https://github.com/iamjason/sic-site/issues\">Report an issue</a></p>\n<p dir=\"auto\">Open each file exactly as written, format JSON only when requested, and edit Markdown as source or as a rendered page that stays in sync with it. Sic uses native document windows, file dialogs, Undo/Redo, and Find. Files stay on your Mac.</p>\n<p dir=\"auto\">Requires macOS 15 or later. Universal builds support Apple silicon and Intel. Supports UTF-8 and BOM-marked UTF-16 text files up to 2 MB.</p>\n<p dir=\"auto\">This public repository hosts the website, artwork, and signed, notarized releases. Application source is maintained separately.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Install</h2></div>\n<p dir=\"auto\">Download <a href=\"https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip\">Sic 0.3.0</a>, unzip it, and drag Sic.app to Applications. A <a href=\"https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip.sha256\">SHA-256 checksum</a> accompanies the release.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Hyrule Compendium</h2></div>\n<p dir=\"auto\">The <code>hyrule.json</code> manifest and <code>hyrule-tool</code> repository topic register Sic with the <a href=\"https://iamjason.github.io/hyrule-compendium-site/\" rel=\"nofollow\">Compendium</a>.</p>\n<p dir=\"auto\">The site is served by GitHub Pages from <code>main:/</code>. No build step or runtime dependencies are required.</p>\n<div class=\"markdown-heading\" dir=\"auto\"><h2 class=\"heading-element\" dir=\"auto\">Usage statistics</h2></div>\n<p dir=\"auto\">This site records anonymous usage statistics: page views, download clicks and a daily visitor count derived from a hash of your IP address and browser. No cookies, no personal data, nothing stored in your browser. The collector is <a href=\"https://github.com/iamjason/gossip-stone-swift#what-is-sent\">Gossip Stone</a>.</p>",
       "releases": [
         {
           "assets": [
             {
               "contentType": "application/zip",
               "downloads": 0,
+              "name": "Sic-0.3.0.zip",
+              "size": 3281938,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip"
+            },
+            {
+              "contentType": "application/octet-stream",
+              "downloads": 0,
+              "name": "Sic-0.3.0.zip.sha256",
+              "size": 80,
+              "url": "https://github.com/iamjason/sic-site/releases/download/v0.3.0/Sic-0.3.0.zip.sha256"
+            }
+          ],
+          "body": "Sic 0.3.0 — the Markdown preview is now editable: type, delete, paste, and use Bold/Italic/Code/Link/Heading/List/Quote on the rendered page, and selections highlight the matching Markdown in the source. Return continues lists and quotes; clicking a task box toggles it. Adds in-app updates: Sic checks the release feed once a day and Sic > Check for Updates… checks now. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.",
+          "bodyHtml": "<p dir=\"auto\">Sic 0.3.0 — the Markdown preview is now editable: type, delete, paste, and use Bold/Italic/Code/Link/Heading/List/Quote on the rendered page, and selections highlight the matching Markdown in the source. Return continues lists and quotes; clicking a task box toggles it. Adds in-app updates: Sic checks the release feed once a day and Sic &gt; Check for Updates… checks now. Requires macOS 15+. Signed and notarized; verify with the .sha256 sidecar.</p>",
+          "html_url": "https://github.com/iamjason/sic-site/releases/tag/v0.3.0",
+          "name": "Sic 0.3.0",
+          "prerelease": false,
+          "published_at": "2026-09-24T04:15:23Z",
+          "tag": "v0.3.0"
+        },
+        {
+          "assets": [
+            {
+              "contentType": "application/zip",
+              "downloads": 1,
               "name": "Sic-0.2.0.zip",
               "size": 3150361,
               "url": "https://github.com/iamjason/sic-site/releases/download/v0.2.0/Sic-0.2.0.zip"
@@ -1653,8 +1678,8 @@
       },
       "status": "beta",
       "tagline": "Opens text files as written, formats JSON on request, and previews Markdown on your Mac.",
-      "updatedAt": "2026-09-24T03:10:33Z",
-      "version": "v0.2.0"
+      "updatedAt": "2026-09-24T04:15:23Z",
+      "version": "v0.3.0"
     }
   ],
   "topic": "hyrule-tool"
