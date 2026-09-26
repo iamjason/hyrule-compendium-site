@@ -1264,7 +1264,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 1,
             "name": "Relay-0.2.0.zip",
             "size": 4425818,
             "url": "https://github.com/iamjason/relay-site/releases/download/v0.2.0/Relay-0.2.0.zip"
@@ -1296,7 +1296,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 1,
               "name": "Relay-0.2.0.zip",
               "size": 4425818,
               "url": "https://github.com/iamjason/relay-site/releases/download/v0.2.0/Relay-0.2.0.zip"
