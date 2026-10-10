@@ -90,7 +90,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 4,
+              "downloads": 5,
               "name": "Deku-0.2.33.zip",
               "size": 14679614,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.33/Deku-0.2.33.zip"
@@ -360,7 +360,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 2,
+              "downloads": 3,
               "name": "Deku-0.2.17.zip",
               "size": 12382453,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.17/Deku-0.2.17.zip"
