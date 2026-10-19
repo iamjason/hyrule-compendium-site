@@ -144,7 +144,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 3,
+              "downloads": 4,
               "name": "Deku-0.2.30.zip",
               "size": 14421193,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.30/Deku-0.2.30.zip"
@@ -1476,7 +1476,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 2,
+              "downloads": 3,
               "name": "Cosmo-0.3.1.zip",
               "size": 1926365,
               "url": "https://github.com/iamjason/scrapper-site/releases/download/v0.3.1/Cosmo-0.3.1.zip"
