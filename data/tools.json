@@ -144,7 +144,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 4,
+              "downloads": 5,
               "name": "Deku-0.2.30.zip",
               "size": 14421193,
               "url": "https://github.com/iamjason/deku-site/releases/download/v0.2.30/Deku-0.2.30.zip"
@@ -707,7 +707,7 @@
         "assets": [
           {
             "contentType": "application/zip",
-            "downloads": 0,
+            "downloads": 1,
             "name": "FangAndBone-0.1.1.zip",
             "size": 48005681,
             "url": "https://github.com/iamjason/fang-and-bone-site/releases/download/v0.1.1/FangAndBone-0.1.1.zip"
@@ -732,7 +732,7 @@
           "assets": [
             {
               "contentType": "application/zip",
-              "downloads": 0,
+              "downloads": 1,
               "name": "FangAndBone-0.1.1.zip",
               "size": 48005681,
               "url": "https://github.com/iamjason/fang-and-bone-site/releases/download/v0.1.1/FangAndBone-0.1.1.zip"
